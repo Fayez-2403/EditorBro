@@ -1,0 +1,97 @@
+/*
+Theme Name: Meridian
+Theme URI: https://example.com/meridian
+Author: EditorBro
+Author URI: https://example.com/editorbro
+Description: Block theme for Meridian Freight, a fictional logistics brand: ink navy and signal orange, Barlow Condensed headings, a contact bar, a header with a Services submenu, a three-column post grid and footer widget columns. Demo · fictional brand · built with EditorBro.
+Requires at least: 6.6
+Requires PHP: 7.4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: meridian
+Tags: block-theme, full-site-editing, business, two-columns, three-columns, custom-colors, custom-menu
+*/
+
+/* Most styling lives in theme.json. These rules cover the few things theme.json cannot express. */
+
+.mf-topbar {
+	background: var(--wp--preset--color--ink);
+	color: #c3cfdb;
+	font-size: 13.5px;
+	padding-block: 10px;
+}
+
+.mf-topbar p {
+	margin: 0;
+}
+
+.mf-header {
+	background: var(--wp--preset--color--white);
+	padding-block: 18px;
+	position: sticky;
+	top: 0;
+	z-index: 20;
+	box-shadow: 0 1px 0 rgba(11, 27, 43, 0.12);
+	padding-inline: max(24px, calc((100% - 1240px) / 2));
+}
+
+.mf-header .wp-block-site-title {
+	font-family: var(--wp--preset--font-family--display);
+	font-size: 26px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.mf-header .wp-block-site-title a {
+	color: var(--wp--preset--color--ink);
+	text-decoration: none;
+}
+
+.mf-header .wp-block-navigation {
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+.mf-header .wp-block-navigation__submenu-container {
+	border-top: 3px solid var(--wp--preset--color--signal) !important;
+	box-shadow: 0 30px 60px -24px rgba(11, 27, 43, 0.45);
+	padding: 10px 0;
+	min-width: 240px !important;
+}
+
+.mf-footer {
+	background: var(--wp--preset--color--ink);
+	color: #c3cfdb;
+	padding-block: 72px 28px;
+}
+
+.mf-footer h4 {
+	color: var(--wp--preset--color--white);
+	border-bottom: 2px solid var(--wp--preset--color--signal);
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+.mf-footer a {
+	color: #e7edf3;
+}
+
+.mf-footer .wp-block-list,
+.mf-footer .wp-block-latest-posts {
+	list-style: none;
+	padding-left: 0;
+}
+
+.mf-demo-line {
+	margin-top: 56px;
+	padding-top: 20px;
+	border-top: 1px solid rgba(255, 255, 255, 0.12);
+	font-family: var(--wp--preset--font-family--mono);
+	font-size: 12px;
+	letter-spacing: 0.06em;
+	color: #8a9bb0;
+}

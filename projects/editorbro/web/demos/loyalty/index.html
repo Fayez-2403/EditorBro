@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Brewpoint Rewards · Every cup counts</title>
+  <meta name="description" content="Brewpoint Rewards: a stamp card, points, tiers and a scripted helper called Brew. Demo app for a fictional café." />
+  <meta name="theme-color" content="#2a1c15" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="inkDefs"></div>
+  <div class="scene">
+    <section class="pitch" aria-labelledby="pitchTitle">
+      <a class="brand" href="#" aria-label="Brewpoint home">
+        <span class="mark" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#2a1c15" /><path d="M11 17h16v6a7 7 0 0 1-7 7h-2a7 7 0 0 1-7-7z" fill="#f6ede0" /><path d="M27 19h2a3 3 0 0 1 0 6h-2.5" fill="none" stroke="#f6ede0" stroke-width="2" /><path d="M16 13q-2-3 0-5M21 13q-2-3 0-5" stroke="#c2362a" stroke-width="1.8" fill="none" stroke-linecap="round" /></svg></span>
+        <span class="brand-name">Brewpoint</span>
+      </a>
+      <p class="kicker">Brewpoint Rewards</p>
+      <h1 id="pitchTitle">Every cup <em>counts.</em></h1>
+      <p class="pitch-sub">A stamp card that never gets lost in a wallet, points that turn into croissants, and Brew, a small helper that knows your card by heart.</p>
+      <ul class="pitch-list">
+        <li><span class="pl-ic" aria-hidden="true">10</span><div><b>Ten stamps, one free drink</b><span>Every handcrafted drink earns a stamp.</span></div></li>
+        <li><span class="pl-ic" aria-hidden="true">★</span><div><b>Bean, Roast, Reserve</b><span>Climb tiers for double-point Mondays and early seasonal menus.</span></div></li>
+        <li><span class="pl-ic" aria-hidden="true">?</span><div><b>Ask Brew</b><span>Scripted answers about your points, rewards and birthday treats.</span></div></li>
+      </ul>
+      <p class="demo-line">Demo · fictional brand · built with EditorBro</p>
+    </section>
+
+    <div class="device">
+      <div class="app" id="app">
+        <header class="appbar">
+          <span class="ab-brand"><span class="mark small" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#2a1c15" /><path d="M11 17h16v6a7 7 0 0 1-7 7h-2a7 7 0 0 1-7-7z" fill="#f6ede0" /><path d="M27 19h2a3 3 0 0 1 0 6h-2.5" fill="none" stroke="#f6ede0" stroke-width="2" /><path class="steam s1" d="M16 13q-2-3 0-5" stroke="#c2362a" stroke-width="1.8" fill="none" stroke-linecap="round" /><path class="steam s2" d="M21 13q-2-3 0-5" stroke="#c2362a" stroke-width="1.8" fill="none" stroke-linecap="round" /></svg></span><span class="ab-name">Brewpoint</span></span>
+          <span class="pts-pill" aria-live="polite"><span id="ptsPill">1,240</span> pts</span>
+          <span class="avatar" aria-label="Aanya K.">AK</span>
+        </header>
+
+        <div class="scroll" id="scroll">
+          <section class="stampcard" aria-label="Stamp card">
+            <div class="sc-top">
+              <div>
+                <p class="sc-kicker">Stamp card</p>
+                <p class="sc-name">Aanya's card</p>
+              </div>
+              <p class="sc-count"><span id="stampCount">7</span>/10</p>
+            </div>
+            <div class="stamps" id="stamps"></div>
+            <p class="sc-foot" id="scFoot">3 more drinks until a free one, on us</p>
+          </section>
+
+          <section class="tier" aria-label="Points and tier">
+            <div class="tier-top">
+              <p class="balance"><span id="balance">1,240</span><span class="unit">pts</span></p>
+              <span class="tier-badge"><span class="dot" aria-hidden="true"></span>Roast member</span>
+            </div>
+            <div class="tier-bar" aria-hidden="true">
+              <span class="tb-fill" id="tierFill"></span>
+              <span class="tb-mark" style="left:0%"></span><span class="tb-mark" style="left:40%"></span><span class="tb-mark" style="left:100%"></span>
+            </div>
+            <div class="tier-labels"><span>Bean</span><span style="left:40%">Roast · 1,000</span><span class="end">Reserve · 2,500</span></div>
+            <p class="tier-note" id="tierNote">1,260 pts to Reserve</p>
+          </section>
+
+          <section class="chat" aria-label="Ask Brew">
+            <div class="chat-head">
+              <span class="brew-av" aria-hidden="true">B</span>
+              <div>
+                <p class="ch-name">Ask Brew</p>
+                <p class="ch-note">Scripted assistant · answers from your card, not a live AI</p>
+              </div>
+            </div>
+            <div class="log" id="log" aria-live="polite"></div>
+          </section>
+          <p class="app-demo">Demo · fictional brand · built with EditorBro</p>
+        </div>
+
+        <div class="composer">
+          <div class="chips" id="chips">
+            <button type="button" class="qchip" data-q="How many points do I have?">How many points do I have?</button>
+            <button type="button" class="qchip" data-q="What can I redeem?">What can I redeem?</button>
+            <button type="button" class="qchip" data-q="Any birthday offer?">Any birthday offer?</button>
+          </div>
+          <form class="input-row" id="askForm">
+            <label class="sr-only" for="ask">Ask Brew</label>
+            <div class="field"><input id="ask" autocomplete="off" placeholder="Ask about points, rewards, offers…" /><span class="fake" id="fake" aria-hidden="true"></span></div>
+            <button class="send" id="send" type="submit" aria-label="Send"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h12M12 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
+          </form>
+        </div>
+
+        <div class="sheet-scrim" id="sheetScrim"></div>
+        <section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" aria-hidden="true">
+          <span class="sheet-handle" aria-hidden="true"></span>
+          <div class="sheet-head">
+            <div class="sheet-illo" id="sheetIllo"></div>
+            <div>
+              <p class="sc-kicker dark">Redeem reward</p>
+              <h2 id="sheetTitle">Cappuccino</h2>
+              <p class="sheet-cost"><span id="sheetCost">450</span> pts · any size</p>
+            </div>
+            <button class="close" type="button" id="sheetClose" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg></button>
+          </div>
+          <div class="qr-card" id="qrCard">
+            <div class="qr-wrap" id="qrWrap"></div>
+            <p class="code" id="code">BP-7K2Q-91</p>
+            <p class="qr-note">Show this at the counter · valid 15 min</p>
+            <div class="stamp-layer" id="stampLayer"></div>
+            <div class="burst" id="burst" aria-hidden="true"></div>
+          </div>
+          <div class="sheet-bal">
+            <span>Balance</span>
+            <span class="bal-flow"><span id="balFrom">1,240</span><span class="arrow" aria-hidden="true">→</span><b id="balTo">790 pts</b></span>
+          </div>
+          <button class="redeem-btn" type="button" id="redeemBtn"><span class="rb-a">Redeem 450 pts</span><span class="rb-b" aria-hidden="true">Done · enjoy it, Aanya</span></button>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="tap" id="tap" aria-hidden="true"><span class="tap-dot"></span><span class="tap-ring"></span></div>
+  <script type="module" src="/src/demos/loyalty/main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "slug": "loyalty",
+  "name": "Brewpoint Rewards",
+  "niche": "Café loyalty app",
+  "tagline": "A phone-first rewards app: stamp card, points and tiers, and Brew, a scripted helper that redeems with an ink stamp.",
+  "accent": "#c2362a",
+  "bg": "#f6ede0",
+  "features": [
+    "10-stamp card with ink-pressed stamps, a points balance and Bean → Roast → Reserve tier progress",
+    "Scripted assistant (no AI API) with typing dots and rich reply cards for points, rewards and birthday offers",
+    "Redeem sheet with a QR-style code drawn deterministically in SVG",
+    "Stamp-burst redemption that updates the balance and the reward cards"
+  ]
+}

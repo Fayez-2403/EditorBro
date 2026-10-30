@@ -1,0 +1,15 @@
+{
+  "slug": "delivery",
+  "name": "Dashr",
+  "niche": "Parcel delivery tracking",
+  "tagline": "Watch your parcel cross the city.",
+  "accent": "#c8f542",
+  "bg": "#0b0e13",
+  "features": [
+    "Night-mode city map drawn in SVG: street grid, river with bridges, parks and landmarks",
+    "Courier rides the route with the travelled part lit and the camera following",
+    "ETA countdown and a Picked up, In transit, Nearby, Delivered timeline",
+    "Proof of delivery with a signature that draws itself",
+    "Pan, zoom, follow, playback speed and a courier chat with quick replies"
+  ]
+}

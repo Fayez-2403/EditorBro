@@ -1,0 +1,15 @@
+{
+  "slug": "vault",
+  "name": "Vaultline",
+  "niche": "Security · end-to-end encrypted messenger",
+  "tagline": "Messages only the two of you can read.",
+  "accent": "#9DAAFF",
+  "bg": "#0C0D11",
+  "features": [
+    "Real WebCrypto end-to-end encryption: ECDH P-256 key agreement into an AES-GCM-256 key, fresh 96-bit IV per message",
+    "A relay-server panel that only ever shows IV and ciphertext, with a tamper switch that makes decryption fail",
+    "Safety number from SHA-256 over both public keys, computed on each side and cross-checked",
+    "Non-extractable private keys, regenerated per session or on demand",
+    "Honest copy: keys stay in this tab; demo, not an audited product"
+  ]
+}

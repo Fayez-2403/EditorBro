@@ -1,0 +1,13 @@
+{
+ "_doc": "Cue sheet for scripts/audio/score.py. energy: per-scene stem levels 0-1 (pad, bass, arp, kick, hat, clap, drone, dhol; lp=1 low-passes the bed; maj=1 switches to the major progression). scenes: SFX per scene, each keyed by a spoken word {w, nth}, seconds from scene start {s}, fraction {p} or seconds before the end {e}; offset, snap (to beat), gain. kind 'clip' places real clip audio: {kind:'clip', clip:'name', ct0, len, gain}; kind 'silence' carves the bed. SFX kinds: impact subImpact flashHit glass mechClick magLock twang alarm scratch dataPulse dataBurst typing disassembly whoosh riser accelSweep servo servoRhythm heartbeat errorBlip dhishoom fixChime paper ticks chartSwell gearRatchet shimmer unfold suck riseTone nodeChain resolve.",
+ "energy": {
+  "hook": {"pad": 0.5, "bass": 0.9, "arp": 0, "kick": 1, "hat": 0, "clap": 1, "drone": 0.5, "dhol": 0},
+  "body": {"pad": 0.6, "bass": 0.8, "arp": 0.7, "kick": 1, "hat": 1, "clap": 0.6, "drone": 0.3, "dhol": 0},
+  "cta": {"pad": 0.7, "bass": 0.6, "arp": 0.4, "kick": 0.5, "hat": 0.5, "clap": 0, "drone": 0.2, "dhol": 0, "maj": 1}
+ },
+ "scenes": {
+  "hook": [{"s": 0, "kind": "impact", "gain": 0.8}],
+  "body": [{"s": 0, "kind": "whoosh", "gain": 0.5}],
+  "cta": [{"s": 0, "kind": "shimmer", "gain": 0.5}]
+ }
+}

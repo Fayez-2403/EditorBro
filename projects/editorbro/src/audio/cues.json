@@ -1,0 +1,506 @@
+{
+ "_doc": "Cue sheet for scripts/audio/score.py (EditorBro, 100 BPM). energy: per-scene stem levels 0-1 (pad, bass, arp, kick, hat, clap, drone, dhol; lp=1 low-passes the bed; maj=1 major progression). scenes: SFX per scene keyed by a spoken word {w, nth}, seconds from scene start {s}, fraction {p} or seconds before the end {e}; offset, snap, gain, len. 'silence' carves the bed. The hook stops dead 0.23 s before the scan line (4.35 s) and lands a sub hit on it; the FORK press (48.95 s) is the loudest hit.",
+ "energy": {
+  "hook": {
+   "pad": 0.35,
+   "bass": 0.25,
+   "arp": 0,
+   "kick": 0,
+   "hat": 0.4,
+   "clap": 0,
+   "drone": 0.7,
+   "dhol": 0,
+   "lp": 1
+  },
+  "flip": {
+   "pad": 0.6,
+   "bass": 0.9,
+   "arp": 0.6,
+   "kick": 1,
+   "hat": 0.7,
+   "clap": 0.6,
+   "drone": 0.3,
+   "dhol": 0
+  },
+  "prompt": {
+   "pad": 0.4,
+   "bass": 0.2,
+   "arp": 0.25,
+   "kick": 0,
+   "hat": 0.35,
+   "clap": 0,
+   "drone": 0.5,
+   "dhol": 0,
+   "lp": 1
+  },
+  "pipeline": {
+   "pad": 0.6,
+   "bass": 0.8,
+   "arp": 0.8,
+   "kick": 1,
+   "hat": 0.8,
+   "clap": 0.5,
+   "drone": 0.2,
+   "dhol": 0
+  },
+  "montage": {
+   "pad": 0.5,
+   "bass": 1.0,
+   "arp": 0.5,
+   "kick": 1,
+   "hat": 1.0,
+   "clap": 1.0,
+   "drone": 0,
+   "dhol": 0.7
+  },
+  "websites": {
+   "pad": 0.6,
+   "bass": 0.8,
+   "arp": 0.7,
+   "kick": 1,
+   "hat": 0.8,
+   "clap": 0.5,
+   "drone": 0,
+   "dhol": 0
+  },
+  "docs": {
+   "pad": 0.5,
+   "bass": 0.5,
+   "arp": 0.4,
+   "kick": 0.6,
+   "hat": 0.5,
+   "clap": 0,
+   "drone": 0,
+   "dhol": 0,
+   "maj": 1
+  },
+  "cta": {
+   "pad": 0.7,
+   "bass": 0.8,
+   "arp": 0.5,
+   "kick": 1,
+   "hat": 0.7,
+   "clap": 0.8,
+   "drone": 0,
+   "dhol": 0,
+   "maj": 1
+  }
+ },
+ "scenes": {
+  "hook": [
+   {
+    "s": 0.0,
+    "kind": "whoosh",
+    "len": 1.6,
+    "gain": 0.25
+   },
+   {
+    "s": 1.1,
+    "kind": "whoosh",
+    "len": 0.9,
+    "gain": 0.4
+   },
+   {
+    "s": 2.25,
+    "kind": "riser",
+    "len": 1.87,
+    "gain": 0.55
+   },
+   {
+    "s": 4.12,
+    "kind": "silence",
+    "len": 0.23
+   },
+   {
+    "s": 4.35,
+    "kind": "subImpact",
+    "gain": 0.95
+   },
+   {
+    "s": 4.35,
+    "kind": "glass",
+    "gain": 0.35
+   },
+   {
+    "s": 4.38,
+    "kind": "dataBurst",
+    "gain": 0.45,
+    "len": 0.6
+   }
+  ],
+  "flip": [
+   {
+    "s": 0.0,
+    "kind": "impact",
+    "gain": 0.45
+   },
+   {
+    "w": "code",
+    "kind": "impact",
+    "gain": 0.7
+   },
+   {
+    "w": "code",
+    "kind": "shimmer",
+    "gain": 0.3,
+    "offset": 0.05,
+    "len": 0.9
+   },
+   {
+    "w": "camera",
+    "kind": "typing",
+    "len": 1.3,
+    "gain": 0.35
+   },
+   {
+    "e": 0.3,
+    "kind": "whoosh",
+    "len": 0.5,
+    "gain": 0.5
+   }
+  ],
+  "prompt": [
+   {
+    "s": 0.0,
+    "kind": "mechClick",
+    "gain": 0.6
+   },
+   {
+    "s": 0.25,
+    "kind": "typing",
+    "len": 2.15,
+    "gain": 0.45
+   },
+   {
+    "s": 2.45,
+    "kind": "mechClick",
+    "gain": 0.75
+   },
+   {
+    "s": 2.5,
+    "kind": "riseTone",
+    "len": 0.5,
+    "gain": 0.35
+   }
+  ],
+  "pipeline": [
+   {
+    "s": 0.0,
+    "kind": "impact",
+    "gain": 0.5
+   },
+   {
+    "s": 0.05,
+    "kind": "dataPulse",
+    "gain": 0.4
+   },
+   {
+    "w": "64",
+    "kind": "dataBurst",
+    "gain": 0.6,
+    "len": 0.6
+   },
+   {
+    "w": "64",
+    "kind": "shimmer",
+    "gain": 0.3,
+    "offset": 0.1,
+    "len": 0.9
+   },
+   {
+    "w": "pipeline",
+    "kind": "magLock",
+    "gain": 0.6
+   },
+   {
+    "w": "12",
+    "kind": "ticks",
+    "len": 1.55,
+    "offset": 0.0,
+    "gain": 0.45
+   },
+   {
+    "e": 0.2,
+    "kind": "flashHit",
+    "gain": 0.55
+   }
+  ],
+  "montage": [
+   {
+    "s": 0.0,
+    "kind": "impact",
+    "gain": 0.55
+   },
+   {
+    "w": "reels",
+    "kind": "impact",
+    "gain": 0.45
+   },
+   {
+    "w": "3d",
+    "kind": "impact",
+    "gain": 0.45
+   },
+   {
+    "w": "cartoons",
+    "kind": "impact",
+    "gain": 0.45
+   },
+   {
+    "w": "data",
+    "kind": "impact",
+    "gain": 0.45
+   },
+   {
+    "w": "perfume",
+    "kind": "impact",
+    "gain": 0.5
+   },
+   {
+    "w": "bees",
+    "kind": "dhishoom",
+    "gain": 0.7
+   },
+   {
+    "s": 5.11,
+    "kind": "whoosh",
+    "len": 0.22,
+    "gain": 0.35
+   },
+   {
+    "s": 5.37,
+    "kind": "whoosh",
+    "len": 0.22,
+    "gain": 0.35
+   },
+   {
+    "s": 5.63,
+    "kind": "whoosh",
+    "len": 0.22,
+    "gain": 0.35
+   },
+   {
+    "w": "isi",
+    "kind": "impact",
+    "gain": 0.4
+   },
+   {
+    "s": 6.9,
+    "kind": "paper",
+    "gain": 0.4
+   },
+   {
+    "s": 7.2,
+    "kind": "paper",
+    "gain": 0.4
+   },
+   {
+    "s": 7.5,
+    "kind": "paper",
+    "gain": 0.4
+   },
+   {
+    "s": 7.8,
+    "kind": "paper",
+    "gain": 0.4
+   },
+   {
+    "s": 8.1,
+    "kind": "paper",
+    "gain": 0.4
+   },
+   {
+    "s": 8.4,
+    "kind": "paper",
+    "gain": 0.4
+   },
+   {
+    "s": 8.7,
+    "kind": "paper",
+    "gain": 0.4
+   },
+   {
+    "s": 9.0,
+    "kind": "paper",
+    "gain": 0.4
+   },
+   {
+    "s": 9.3,
+    "kind": "paper",
+    "gain": 0.45
+   }
+  ],
+  "websites": [
+   {
+    "s": 0.0,
+    "kind": "impact",
+    "gain": 0.5
+   },
+   {
+    "s": 0.05,
+    "kind": "unfold",
+    "gain": 0.4,
+    "len": 0.6
+   },
+   {
+    "w": "brand",
+    "kind": "whoosh",
+    "len": 0.35,
+    "gain": 0.45
+   },
+   {
+    "w": "online",
+    "kind": "whoosh",
+    "len": 0.35,
+    "gain": 0.4
+   },
+   {
+    "w": "food",
+    "kind": "whoosh",
+    "len": 0.3,
+    "gain": 0.4
+   },
+   {
+    "s": 4.45,
+    "kind": "whoosh",
+    "len": 0.25,
+    "gain": 0.35
+   },
+   {
+    "w": "loyalty",
+    "kind": "whoosh",
+    "len": 0.35,
+    "gain": 0.4
+   },
+   {
+    "w": "encrypted",
+    "kind": "magLock",
+    "gain": 0.45
+   },
+   {
+    "w": "automation",
+    "kind": "nodeChain",
+    "gain": 0.45,
+    "len": 0.8
+   },
+   {
+    "w": "sab",
+    "kind": "impact",
+    "gain": 0.55
+   },
+   {
+    "s": 11.1,
+    "kind": "whoosh",
+    "len": 0.45,
+    "gain": 0.4
+   },
+   {
+    "s": 12.0,
+    "kind": "whoosh",
+    "len": 0.45,
+    "gain": 0.4
+   }
+  ],
+  "docs": [
+   {
+    "s": 0.0,
+    "kind": "impact",
+    "gain": 0.5
+   },
+   {
+    "s": 0.15,
+    "kind": "paper",
+    "gain": 0.35
+   },
+   {
+    "s": 0.41,
+    "kind": "paper",
+    "gain": 0.3
+   },
+   {
+    "s": 0.67,
+    "kind": "paper",
+    "gain": 0.3
+   },
+   {
+    "s": 0.93,
+    "kind": "paper",
+    "gain": 0.3
+   },
+   {
+    "s": 1.19,
+    "kind": "paper",
+    "gain": 0.35
+   },
+   {
+    "w": "prompt",
+    "kind": "impact",
+    "gain": 0.55
+   },
+   {
+    "w": "render",
+    "kind": "impact",
+    "gain": 0.65
+   },
+   {
+    "e": 0.3,
+    "kind": "whoosh",
+    "len": 0.4,
+    "gain": 0.45
+   }
+  ],
+  "cta": [
+   {
+    "s": 0.0,
+    "kind": "impact",
+    "gain": 0.5
+   },
+   {
+    "w": "editorbro",
+    "kind": "shimmer",
+    "gain": 0.5,
+    "len": 0.9
+   },
+   {
+    "w": "fork",
+    "kind": "subImpact",
+    "offset": 0.06,
+    "gain": 1.0
+   },
+   {
+    "w": "fork",
+    "kind": "dhishoom",
+    "offset": 0.06,
+    "gain": 0.8
+   },
+   {
+    "w": "clone",
+    "kind": "typing",
+    "len": 1.0,
+    "gain": 0.4
+   },
+   {
+    "s": 5.45,
+    "kind": "whoosh",
+    "len": 0.5,
+    "gain": 0.6
+   },
+   {
+    "w": "comment",
+    "kind": "impact",
+    "gain": 0.5
+   },
+   {
+    "e": 1.2,
+    "kind": "resolve",
+    "gain": 0.6,
+    "len": 1.1
+   },
+   {
+    "s": 5.5,
+    "kind": "impact",
+    "gain": 0.5
+   }
+  ]
+ }
+}

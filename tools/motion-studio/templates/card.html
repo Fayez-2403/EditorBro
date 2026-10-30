@@ -1,0 +1,20 @@
+<!doctype html><meta charset="utf-8">
+<!-- Hologram result card, 1500x600, transparent. Fill it from the URL: ?state=02|Blender|3D, rigs and Cycles renders|github.com/blender/blender -->
+<style>
+  html,body{margin:0;background:transparent}
+  .c{position:absolute;inset:18px;border-radius:26px;padding:44px 56px;box-sizing:border-box;color:#FFF1E4;
+     background:linear-gradient(160deg,rgba(60,22,12,.92),rgba(28,10,6,.94));border:3px solid rgba(255,190,150,.75);
+     box-shadow:0 0 22px rgba(255,150,100,.55),inset 0 0 40px rgba(255,140,90,.18);font-family:Inter,Segoe UI,sans-serif}
+  .tag{font:600 26px/1 "JetBrains Mono",Consolas,monospace;letter-spacing:.08em;opacity:.85}
+  .tag b{border:2px solid currentColor;border-radius:6px;padding:3px 8px;margin-right:14px}
+  .name{font:500 150px/1.05 Georgia,serif;margin-top:34px;text-shadow:0 0 18px rgba(255,200,170,.45)}
+  .what{font-size:40px;margin-top:18px;opacity:.92}
+  .path{position:absolute;left:56px;bottom:36px;font:24px "JetBrains Mono",Consolas,monospace;opacity:.7}
+  .num{position:absolute;right:56px;top:40px;font:400 150px/1 Georgia,serif;color:transparent;-webkit-text-stroke:2px rgba(255,190,150,.8)}
+</style>
+<div class="c"><div class="tag"><b>REPO</b><span id="k"></span> / 20</div><div class="name" id="n"></div>
+<div class="what" id="w"></div><div class="path" id="p"></div><div class="num" id="u"></div></div>
+<script>
+  const [k='02',n='Blender',w='3D, rigs and Cycles renders',p='github.com/blender/blender']=(new URLSearchParams(location.search).get('state')||'').split('|').filter(Boolean).length?new URLSearchParams(location.search).get('state').split('|'):[];
+  for (const [id,v] of [['k',k],['n',n],['w',w],['p',p],['u',k]]) document.getElementById(id).textContent=v;
+</script>

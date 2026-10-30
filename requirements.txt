@@ -1,0 +1,13 @@
+# Python 3.12. Audio, scores, QA and captions.
+numpy
+scipy
+pillow
+soundfile
+librosa
+pyloudnorm
+pedalboard
+numba
+opencv-python
+reportlab
+faster-whisper
+edge-tts

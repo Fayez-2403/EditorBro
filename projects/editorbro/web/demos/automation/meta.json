@@ -1,0 +1,15 @@
+{
+  "slug": "automation",
+  "name": "Flowsmith",
+  "niche": "No-code automation builder",
+  "tagline": "Wire it once. Watch it run.",
+  "accent": "#ff5a1f",
+  "bg": "#f5f4ef",
+  "features": [
+    "Node canvas on a dotted grid: drag steps, pan and zoom",
+    "Connect ports by dragging; select a link and press Delete to remove it",
+    "Run computes a schedule from the live graph and sends packets along bezier links",
+    "Each step lights up with an output preview; the run log shows relative timings in ms",
+    "Step library and an inspector for each step's settings"
+  ]
+}

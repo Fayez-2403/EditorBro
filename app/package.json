@@ -1,0 +1,29 @@
+{
+  "name": "motion-as-code",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/opentype.js": "^1.3.10",
+    "@types/three": "^0.186.0",
+    "playwright-core": "^1.63.0",
+    "vite": "^8.3.0"
+  },
+  "peerDependencies": {
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "opentype.js": "^2.0.0",
+    "three": "^0.186.0"
+  },
+  "scripts": {
+    "dev": "bunx vite",
+    "dev:motion": "bun scripts/preview_motion.ts",
+    "check": "tsc --noEmit",
+    "render": "bun scripts/render.ts video --samples auto --shutter 0.5 --crf 17",
+    "render:draft": "bun scripts/render.ts video --samples 4 --shutter 0.5 --crf 20 --preset veryfast --out ../out/motion-as-code_draft.mp4",
+    "dev:flex": "bun scripts/preview_flex.ts",
+    "render:flex": "bun scripts/render_flex.ts --video --fps 60 --samples 4 --out ../out/motion-flex_claude_reel.mp4"
+  }
+}

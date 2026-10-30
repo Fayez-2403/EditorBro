@@ -1,0 +1,17 @@
+{
+  "name": "editorbro",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Tech पे Trek reel: EditorBro: Welcome to the Studio. Built from the motion-studio reel template (docs/TECHPETREK_MASTER_REEL_STUDIO.md).",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "stills": "node scripts/stills.mjs",
+    "render": "node scripts/render.mjs"
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.8.2", "@remotion/cli": "4.0.538", "@remotion/renderer": "4.0.538", "@remotion/three": "4.0.538",
+    "react": "19.1.1", "react-dom": "19.1.1", "remotion": "4.0.538", "three": "0.186.1"
+  },
+  "devDependencies": { "@types/node": "24.10.1", "@types/react": "19.1.12", "@types/three": "0.186.0", "tsx": "4.20.5", "typescript": "5.9.2" }
+}

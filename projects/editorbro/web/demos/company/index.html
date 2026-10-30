@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Halcyon Grid · Battery storage that keeps the grid calm</title>
+  <meta name="description" content="Halcyon Grid builds, finances and operates grid-scale battery storage. A fictional company built with EditorBro." />
+  <meta name="theme-color" content="#05080C" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="hdr" id="hdr">
+    <div class="wrap hdr__in">
+      <a class="logo" href="#top" aria-label="Halcyon Grid home">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="4" width="4.6" height="24" rx="2.3" fill="currentColor"/><rect x="23.4" y="4" width="4.6" height="24" rx="2.3" fill="currentColor"/><path d="M8.6 16c2.4-3.4 5-3.4 7.4 0s5 3.4 7.4 0" stroke="#7CF2C3" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+        <span>Halcyon<em>Grid</em></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#solutions">Solutions</a><a href="#cases">Projects</a><a href="#sustainability">Sustainability</a><a href="#investors">Investors</a><a href="#careers">Careers</a><a href="#news">Newsroom</a>
+      </nav>
+      <a class="btn btn--light hdr__cta" href="#contact">Talk to our team</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="overlay"><span>Menu</span><i></i></button>
+    </div>
+  </header>
+
+  <div class="overlay" id="overlay" hidden>
+    <nav aria-label="Mobile">
+      <a href="#solutions">Solutions</a><a href="#cases">Projects</a><a href="#sustainability">Sustainability</a><a href="#investors">Investors</a><a href="#careers">Careers</a><a href="#news">Newsroom</a>
+    </nav>
+    <a class="btn btn--mint" href="#contact">Talk to our team</a>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <canvas class="hero__field" aria-hidden="true"></canvas>
+      <div class="wrap hero__in">
+        <p class="kicker"><i class="pulse"></i>Grid-scale battery storage</p>
+        <h1 class="hero__title">Storage that keeps the grid <em class="calm">calm.<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path class="calm__wave" d="M2 12 C 30 2, 50 2, 75 11 S 125 20, 150 10 S 185 3, 198 8"/></svg></em></h1>
+        <p class="hero__lede">We build, finance and operate batteries that soak up surplus solar by day and give it back at the evening peak, in under 200 milliseconds when the grid needs it.</p>
+        <div class="hero__cta"><a class="btn btn--mint" href="#solutions">Explore solutions</a><a class="btn btn--ghost" href="#investors">Investor relations</a></div>
+      </div>
+      <div class="wrap hero__live" aria-label="Fleet readouts, sample data">
+        <div class="live"><span class="live__k">Fleet output</span><span class="live__v" data-live="mw">1,284 MW</span></div>
+        <div class="live"><span class="live__k">Grid frequency</span><span class="live__v" data-live="hz">50.01 Hz</span></div>
+        <div class="live"><span class="live__k">State of charge</span><span class="live__v live__v--mint" data-live="soc">68%</span></div>
+        <span class="live__note">Live fleet view · sample data</span>
+      </div>
+    </section>
+
+    <section class="mission" id="mission">
+      <div class="wrap">
+        <p class="label"><span>01</span>Mission</p>
+        <p class="mission__statement">Clean power is cheap at noon and scarce at seven. <em>We move it</em> from one to the other, so the evening peak runs on sunlight instead of coal.</p>
+        <dl class="stats" id="stats">
+          <div class="stat"><dt>Storage in operation</dt><dd><b data-to="4.8" data-dec="1">0</b><span>GWh</span></dd><i class="stat__bar"><i></i></i></div>
+          <div class="stat"><dt>Peak output across the fleet</dt><dd><b data-to="1.9" data-dec="1">0</b><span>GW</span></dd><i class="stat__bar"><i></i></i></div>
+          <div class="stat"><dt>Sites operating in 9 countries</dt><dd><b data-to="63">0</b><span>sites</span></dd><i class="stat__bar"><i></i></i></div>
+          <div class="stat"><dt>Fleet availability, trailing 12 months</dt><dd><b data-to="98.9" data-dec="1">0</b><span>%</span></dd><i class="stat__bar"><i></i></i></div>
+        </dl>
+        <p class="fine">Sample figures for a fictional company.</p>
+      </div>
+    </section>
+
+    <section class="solutions" id="solutions">
+      <div class="wrap">
+        <div class="sec-top"><p class="label"><span>02</span>Solutions</p><h2>One fleet. <em>Four ways</em> to plug in.</h2></div>
+        <div class="tabs" role="tablist" aria-label="Solutions">
+          <button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true"><span class="lg">Utility-scale</span><span class="sm" aria-hidden="true">Utility</span></button>
+          <button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1"><span class="lg">Commercial &amp; industrial</span><span class="sm" aria-hidden="true">C&amp;I</span></button>
+          <button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Microgrids</button>
+          <button role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1">Halcyon OS</button>
+          <i class="tabs__ink" aria-hidden="true"></i>
+        </div>
+        <div class="panels">
+          <article class="panel" role="tabpanel" id="panel-0" aria-labelledby="tab-0" data-scene="utility">
+            <div class="panel__copy">
+              <h3>Utility-scale storage</h3>
+              <p>100 MWh to 1 GWh sites that shift solar into the evening peak and hold frequency steady in the seconds after a fault.</p>
+              <ul class="specs"><li><b>2–4 h</b><span>duration</span></li><li><b>LFP</b><span>cell chemistry</span></li><li><b>&lt; 200 ms</b><span>response</span></li></ul>
+              <a class="link" href="#cases">See utility projects <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="panel__art"></div>
+          </article>
+          <article class="panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1" data-scene="ci" hidden>
+            <div class="panel__copy">
+              <h3>Commercial &amp; industrial</h3>
+              <p>Behind-the-meter systems that cut peak-demand charges and keep production lines running through outages.</p>
+              <ul class="specs"><li><b>0.25–20</b><span>MWh per site</span></li><li><b>Peak</b><span>shaving + backup</span></li><li><b>4–6 yr</b><span>typical payback</span></li></ul>
+              <a class="link" href="#cases">See C&amp;I projects <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="panel__art"></div>
+          </article>
+          <article class="panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" data-scene="micro" hidden>
+            <div class="panel__copy">
+              <h3>Microgrids</h3>
+              <p>Islands, ports and mines that run on solar and storage, with diesel as the backup instead of the base load.</p>
+              <ul class="specs"><li><b>≈ 90%</b><span>diesel offset</span></li><li><b>Black</b><span>start capable</span></li><li><b>24/7</b><span>remote operations</span></li></ul>
+              <a class="link" href="#cases">See microgrids <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="panel__art"></div>
+          </article>
+          <article class="panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" data-scene="os" hidden>
+            <div class="panel__copy">
+              <h3>Halcyon OS</h3>
+              <p>Our operating software forecasts prices and weather, then charges and discharges every site in the fleet, every five minutes.</p>
+              <ul class="specs"><li><b>5 min</b><span>dispatch interval</span></li><li><b>Fleet</b><span>wide forecasting</span></li><li><b>Open</b><span>APIs for utilities</span></li></ul>
+              <a class="link" href="#contact">Request a demo <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="panel__art"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="investors" id="investors">
+      <div class="wrap investors__in">
+        <div class="ir-head">
+          <p class="label label--dark"><span>03</span>Investor relations</p>
+          <h2>Contracted, <em>not speculative.</em></h2>
+        </div>
+        <div class="ir-copy">
+          <p>Most of our revenue comes from long-term tolling and capacity contracts with utilities, so the fleet earns whether or not prices spike.</p>
+          <dl class="ir-facts">
+            <div><dt>Contracted backlog</dt><dd>₹18,400 cr</dd></div>
+            <div><dt>Weighted contract life</dt><dd>14.2 yrs</dd></div>
+            <div><dt>Next results</dt><dd>12 Feb 2027</dd></div>
+          </dl>
+          <div class="ir-links"><a class="link link--light" href="#investors">Q2 FY27 results <span aria-hidden="true">→</span></a><a class="link link--light" href="#investors">Annual report 2026 <span aria-hidden="true">→</span></a></div>
+        </div>
+        <figure class="ir-card">
+          <figcaption><span>Contracted storage capacity</span><b>GWh, fiscal year end</b></figcaption>
+          <div class="ir-chart-wrap"></div>
+          <p class="fine fine--dark">Sample data for a fictional company.</p>
+        </figure>
+      </div>
+    </section>
+
+    <section class="cases" id="cases">
+      <div class="wrap">
+        <div class="sec-top sec-top--row"><div><p class="label"><span>04</span>Projects</p><h2>Proof, <em>site by site.</em></h2></div><a class="link" href="#cases">All 63 projects <span aria-hidden="true">→</span></a></div>
+        <div class="case-grid">
+          <article class="case"><div class="case__art" data-thumb="shift"></div><div class="case__body"><p class="case__meta">Utility · Rajasthan · 600 MWh</p><h3>Desert Peak moves noon solar to the 7 p.m. peak</h3><p>Four hours of storage beside a 1.2 GW solar park, dispatched against the evening price every day.</p></div></article>
+          <article class="case"><div class="case__art" data-thumb="island"></div><div class="case__body"><p class="case__meta">Microgrid · Island · 48 MWh</p><h3>An island that runs on sun after dark</h3><p>Solar and storage carry the base load; the diesel sets now start a few times a month, not every evening.</p></div></article>
+          <article class="case"><div class="case__art" data-thumb="peak"></div><div class="case__body"><p class="case__meta">C&amp;I · Pune · 12 MWh</p><h3>A cold store that shaved its peak, not its output</h3><p>Batteries cover the afternoon compressor surge, so the demand charge falls and the cold chain never pauses.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sustain" id="sustainability">
+      <div class="wrap sustain__in">
+        <div>
+          <p class="label label--dark"><span>05</span>Sustainability</p>
+          <h2>Every cell <em>accounted for,</em> from mine to second life.</h2>
+        </div>
+        <div class="sustain__side">
+          <ul class="sustain__list">
+            <li><b>1.62 Mt</b><span>CO₂e avoided since 2021</span></li>
+            <li><b>94%</b><span>of cells traced to audited suppliers</span></li>
+            <li><b>100%</b><span>of retired cells sent to second life or recycling</span></li>
+          </ul>
+          <button class="btn btn--mint" id="report-btn" type="button">Read the 2026 sustainability report</button>
+          <p class="fine fine--dark">Sample figures for a fictional company.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="careers" id="careers">
+      <div class="wrap careers__in">
+        <div class="sec-top"><p class="label"><span>06</span>Careers</p><h2>Build the <em>calm grid</em> with us.</h2><p class="sec-lede">Engineers, analysts and site crews across four countries. We hire for curiosity and train for batteries.</p><a class="link" href="#careers">See all 24 open roles <span aria-hidden="true">→</span></a></div>
+        <ul class="roles">
+          <li><a href="#careers"><span class="role__t">Senior Power Systems Engineer</span><span class="role__m">Grid integration · Bengaluru</span><span class="role__x">Full-time</span></a></li>
+          <li><a href="#careers"><span class="role__t">Battery Performance Analyst</span><span class="role__m">Halcyon OS · Pune</span><span class="role__x">Hybrid</span></a></li>
+          <li><a href="#careers"><span class="role__t">Site Commissioning Lead</span><span class="role__m">Projects · Jodhpur</span><span class="role__x">On site</span></a></li>
+          <li><a href="#careers"><span class="role__t">Frontend Engineer, Fleet UI</span><span class="role__m">Software · Remote (India)</span><span class="role__x">Full-time</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="news" id="news">
+      <div class="wrap">
+        <div class="sec-top sec-top--row"><div><p class="label"><span>07</span>Newsroom</p><h2>Latest from <em>Halcyon.</em></h2></div><a class="link" href="#news">Press kit <span aria-hidden="true">→</span></a></div>
+        <ul class="news-list">
+          <li><a href="#news"><time datetime="2026-10-28">28 Oct 2026</time><span class="tag">Projects</span><span class="news__t">Desert Peak reaches full 600 MWh commercial operation</span><span class="news__go" aria-hidden="true">→</span></a></li>
+          <li><a href="#news"><time datetime="2026-10-14">14 Oct 2026</time><span class="tag">Halcyon OS</span><span class="news__t">Five-minute dispatch is now live across the whole fleet</span><span class="news__go" aria-hidden="true">→</span></a></li>
+          <li><a href="#news"><time datetime="2026-09-30">30 Sep 2026</time><span class="tag">Company</span><span class="news__t">We are opening a cell-testing lab in Pune</span><span class="news__go" aria-hidden="true">→</span></a></li>
+          <li><a href="#news"><time datetime="2026-09-09">09 Sep 2026</time><span class="tag">Sustainability</span><span class="news__t">Our first recycling pilot closes the loop on retired cells</span><span class="news__go" aria-hidden="true">→</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ftr" id="contact">
+    <div class="wrap">
+      <div class="ftr__top">
+        <p class="ftr__big">Plan a site with <em>Halcyon.</em></p>
+        <a class="btn btn--mint" href="mailto:hello@halcyongrid.example">hello@halcyongrid.example</a>
+      </div>
+      <div class="ftr__cols">
+        <div><h4>Solutions</h4><a href="#solutions">Utility-scale</a><a href="#solutions">Commercial &amp; industrial</a><a href="#solutions">Microgrids</a><a href="#solutions">Halcyon OS</a></div>
+        <div><h4>Company</h4><a href="#mission">Mission</a><a href="#careers">Careers</a><a href="#news">Newsroom</a><a href="#sustainability">Sustainability</a></div>
+        <div><h4>Investors</h4><a href="#investors">Results</a><a href="#investors">Annual report</a><a href="#investors">Governance</a></div>
+        <div><h4>Offices</h4><p>Bengaluru · Pune · Jodhpur<br />Singapore · Lisbon</p></div>
+      </div>
+      <div class="ftr__bar"><span>© 2026 Halcyon Grid</span><span class="demo-line">Demo · fictional brand · built with EditorBro</span></div>
+    </div>
+  </footer>
+
+  <div class="modal" id="report-modal" hidden>
+    <div class="modal__scrim" data-close></div>
+    <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="report-title">
+      <button class="modal__x" type="button" data-close aria-label="Close">×</button>
+      <p class="label"><span>PDF</span>Sustainability report 2026</p>
+      <h3 id="report-title">Sample report</h3>
+      <p>This is a demo site for a fictional company, so there is no report file to download. In a real build, this button would open the PDF.</p>
+      <button class="btn btn--ink" type="button" data-close>Got it</button>
+    </div>
+  </div>
+
+  <script type="module" src="/src/demos/company/main.ts"></script>
+</body>
+</html>

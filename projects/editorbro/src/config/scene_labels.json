@@ -1,0 +1,6 @@
+{
+ "_doc": "scene id -> [on-screen label, fact ids from docs/factcheck.md]; read by scripts/export_kit.py",
+ "hook": ["[HOOK LABEL]", "F1"],
+ "body": ["[BODY LABEL]", "F1"],
+ "cta": ["[CTA LABEL]", "source footer"]
+}

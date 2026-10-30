@@ -1,0 +1,26 @@
+{
+ "_doc": "Montage EDL (scene 'montage', 18.3-27.9 s). Each clip: src (repo-relative render of OUR reel), ss = source second, at = reel second, dur. Cuts sit on the VO words in SCENE_TIMINGS (Reels 18.45, 3D 18.93, cartoons 19.81, data 20.75, perfume 21.72, Bees 23.15, isi 24.18). scripts/clips.py cuts them to public/clips/m_<id>.mp4 (1080x1920, 60 fps, no audio). posters = stills for the 25.2-27.9 s poster wall.",
+ "clips": [
+  {"id": "reels",   "src": "out/github-trending-part1.mp4",            "ss": 4.4,  "at": 18.30, "dur": 0.63, "label": "GitHub series"},
+  {"id": "film3d",  "src": "out/parts_grokbot/joined.mp4",             "ss": 29.0, "at": 18.93, "dur": 0.88, "label": "3D studio"},
+  {"id": "cartoon", "src": "out/parts_dots/joined.mp4",                "ss": 16.0, "at": 19.81, "dur": 0.94, "label": "cartoon"},
+  {"id": "data",    "src": "out/motion-flex_claude_reel.mp4",          "ss": 7.3,  "at": 20.75, "dur": 0.97, "label": "data story"},
+  {"id": "perfume", "src": "projects/editorbro/public/clips/src_maison_hit.mp4", "ss": 0.0, "at": 21.72, "dur": 1.43, "label": "perfume film"},
+  {"id": "b1",      "src": "projects/paperpilot-local-pdf/out/paperpilot-local-pdf_v1_reel_1080x1920_60fps.mp4", "ss": 9.1, "at": 23.15, "dur": 0.26},
+  {"id": "b2",      "src": "out/parts_gh4/joined.mp4",                 "ss": 13.7, "at": 23.41, "dur": 0.26},
+  {"id": "b3",      "src": "out/motion-flex_possibilities_60.mp4",     "ss": 20.0, "at": 23.67, "dur": 0.26},
+  {"id": "b4",      "src": "out/parts_grokbot/joined.mp4",             "ss": 43.5, "at": 23.93, "dur": 0.25},
+  {"id": "worlds",  "src": "out/motion-flex_claude_reel.mp4",          "ss": 17.0, "at": 24.18, "dur": 1.02, "label": "worlds from code"}
+ ],
+ "posters": [
+  {"src": "out/motion-flex_claude_reel.mp4", "ss": 2.6},
+  {"src": "projects/paperpilot-local-pdf/out/paperpilot-local-pdf_v1_reel_1080x1920_60fps.mp4", "ss": 22.9},
+  {"src": "out/parts_grokbot/joined.mp4", "ss": 38.7},
+  {"src": "projects/editorbro/public/clips/src_maison_hit.mp4", "ss": 1.2},
+  {"src": "out/motion-flex_possibilities_60.mp4", "ss": 10.0},
+  {"src": "out/parts_dots/joined.mp4", "ss": 40.0},
+  {"src": "out/github-trending-part1.mp4", "ss": 48.3},
+  {"src": "out/motion-flex_claude_reel.mp4", "ss": 12.1},
+  {"src": "projects/paperpilot-local-pdf/out/paperpilot-local-pdf_v1_reel_1080x1920_60fps.mp4", "ss": 41.0}
+ ]
+}

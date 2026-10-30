@@ -1,0 +1,60 @@
+# dependencies and caches
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+dist/
+.vite/
+
+# secrets
+.env
+.env.*
+!.env.example
+
+# media: renders, takes, references and brand assets stay local; reels re-render from source
+out/
+output/
+**/assets/*
+!**/assets/**/.gitkeep
+**/audio/takes/
+**/audio/out/
+**/public/audio/*.wav
+**/public/audio/*.mp3
+**/public/clips/
+*.mp4
+*.mov
+*.webm
+*.wav
+*.mp3
+*.m4a
+
+# third-party skills installed by scripts/setup.* (their licences stay with their authors)
+.claude/skills/motionmaxxing/
+.claude/skills/higgsfield-*/
+.claude/skills/0[1-9]-*/
+.claude/skills/1[0-5]-*/
+.claude/skills/seedance-auto-generate/
+.claude/skills/ugc-*/
+.claude/skills/hyperframes*/
+.claude/skills/_vendor/
+.claude/skills/faceless-explainer/
+.claude/skills/general-video/
+.claude/skills/media-use/
+.claude/skills/motion-graphics/
+.claude/skills/music-to-video/
+.claude/skills/product-launch-video/
+.claude/skills/pr-to-video/
+.claude/skills/remotion-to-hyperframes/
+.claude/skills/slideshow/
+.claude/skills/talking-head-recut/
+.claude/skills/embedded-captions/
+.claude/skills/figma/
+.agents/
+
+# the motion-studio source pack (author's text)
+.claude/skills/motion-studio/references/source/
+
+# editor / OS
+.DS_Store
+Thumbs.db
+.playwright-mcp/

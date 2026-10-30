@@ -1,0 +1,77 @@
+{
+ "_doc": "The nine demo sites (web/demos/*). 'clip' = captured reel tour (432x768 @2.5 -> 1080x1920, 6 s), 'desktop' = 1440x900 still. ready=false draws a labelled placeholder. 'at' = reel second the site appears (VO word in SCENE_TIMINGS).",
+ "demos": [
+  {
+   "slug": "brand",
+   "name": "LUMA Audio",
+   "niche": "D2C headphones",
+   "accent": "#FF7A4D",
+   "at": 29.83,
+   "ready": true
+  },
+  {
+   "slug": "store",
+   "name": "Threadline",
+   "niche": "fashion store",
+   "accent": "#4A55E8",
+   "at": 30.82,
+   "ready": true
+  },
+  {
+   "slug": "food",
+   "name": "Tiffinly",
+   "niche": "food ordering",
+   "accent": "#2E8B5A",
+   "at": 31.88,
+   "ready": true
+  },
+  {
+   "slug": "delivery",
+   "name": "Dashr",
+   "niche": "parcel tracking",
+   "accent": "#C8F542",
+   "at": 32.4,
+   "ready": true
+  },
+  {
+   "slug": "loyalty",
+   "name": "Brewpoint Rewards",
+   "niche": "café loyalty app",
+   "accent": "#D2493B",
+   "at": 32.82,
+   "ready": true
+  },
+  {
+   "slug": "vault",
+   "name": "Vaultline",
+   "niche": "E2EE messenger",
+   "accent": "#9DAAFF",
+   "at": 33.88,
+   "ready": true
+  },
+  {
+   "slug": "automation",
+   "name": "Flowsmith",
+   "niche": "automation builder",
+   "accent": "#FF5A1F",
+   "at": 34.88,
+   "ready": true
+  },
+  {
+   "slug": "wordpress",
+   "name": "Meridian Freight",
+   "niche": "WordPress theme",
+   "accent": "#F26A1F",
+   "at": 39.0,
+   "ready": true
+  },
+  {
+   "slug": "company",
+   "name": "Halcyon Grid",
+   "niche": "corporate site",
+   "accent": "#7CF2C3",
+   "at": 39.9,
+   "ready": true
+  }
+ ]
+}

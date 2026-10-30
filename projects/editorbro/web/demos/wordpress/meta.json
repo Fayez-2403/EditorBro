@@ -1,0 +1,15 @@
+{
+  "slug": "wordpress",
+  "name": "Meridian Freight",
+  "niche": "Logistics · WordPress business theme",
+  "tagline": "Port to door, on a schedule you can plan.",
+  "accent": "#F26A1F",
+  "bg": "#0B1B2B",
+  "features": [
+    "Classic WordPress business layout: contact bar, sticky header, mega dropdown menu, footer widget columns",
+    "Hero slider with a container-door wipe, autoplay progress tabs, swipe and keyboard control",
+    "Count-up stats band and a swipeable testimonials carousel",
+    "Ships as a minimal WordPress block theme: style.css, theme.json v3, index template, header and footer parts",
+    "Every illustration (ship, freight train, globe routes, post thumbnails) drawn in SVG code"
+  ]
+}

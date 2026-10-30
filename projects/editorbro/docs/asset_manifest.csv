@@ -1,0 +1,9 @@
+chapter,asset,post_url,creator,file_path,start,end,rights,credit,screenshot,verified_label
+hook/flip/cta,highway world + billboard (Three.js plates),,ours (web/src/world),public/clips/highway_hook.mp4;public/clips/highway_cta.mp4,0,8.7,owned,original code,,built in code
+pipeline,64 skill names + 12 gate names (text only),,skill authors (names only),src/config/skills.ts,,,fact (names),see docs/03-skills-map.md,,
+montage,our earlier renders (GitHub series, Grok Bot, DOTS fan-made, Motion Flex, PaperPilot, Maison Milan),,ours,public/clips/m_*.mp4;poster_*.jpg,18.3,27.9,owned (DOTS = fan-made of OpenAI mascots, previously published; Grok Bot named after xAI product; Maison Milan product photos = brand promo permission pending),Tech pe Trek,,own renders
+websites,nine demo sites (fictional brands),,ours (web/demos),public/clips/demo_*.mp4;demo_*_desktop.png,27.9,41.7,owned,original code,,fictional brands labelled
+voice,Liam (ElevenLabs eleven_turbo_v2_5),,ElevenLabs,audio/takes,0,54.9,licensed: ElevenLabs paid plan (user's account),ElevenLabs voice,,
+score + sfx,synthesized score,,ours (scripts/audio/score.py),public/audio/mix_reel.wav,0,54.9,owned,original,,
+fonts,Fraunces + Archivo + Inter + JetBrains Mono,https://github.com/google/fonts,OFL authors,public/fonts,,,licensed:SIL OFL 1.1,OFL,,
+reference,10 reference reels + GTA VI trailer recording,see docs/references.md,various,assets/reference,,,reference only (not in the film),,,not used in the film

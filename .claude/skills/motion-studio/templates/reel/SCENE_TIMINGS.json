@@ -1,0 +1,16 @@
+{
+ "_doc": "PLACEHOLDER until scripts/audio/timing.py runs on the real voice take (then it is generated; never edit by hand).",
+ "fps": 60, "bpm": 120, "beat": 0.5, "version": "v1",
+ "variants": {
+  "reel": {
+   "width": 1080, "height": 1920, "durationInFrames": 600, "seconds": 10, "voSource": "placeholder (no voice yet)", "scratch": true,
+   "scenes": [
+    {"id": "hook", "start": 0, "end": 2, "from": 0, "durationInFrames": 120},
+    {"id": "body", "start": 2, "end": 8, "from": 120, "durationInFrames": 360},
+    {"id": "cta", "start": 8, "end": 10, "from": 480, "durationInFrames": 120}
+   ],
+   "vo": [],
+   "captions": []
+  }
+ }
+}

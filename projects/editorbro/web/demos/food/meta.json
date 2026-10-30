@@ -1,0 +1,15 @@
+{
+  "slug": "food",
+  "name": "Tiffinly",
+  "niche": "Food ordering app",
+  "tagline": "Ghar ka khana, hot at your door.",
+  "accent": "#1f6b45",
+  "bg": "#fbf5ea",
+  "features": [
+    "Every dish drawn in SVG: thali, dum biryani, dosa, kathi rolls, kulhad chai and more",
+    "Cuisine chips and live search filter the kitchens",
+    "Working menu steppers, cart with item total, GST and delivery fee in ₹",
+    "Place the order and watch it move: Confirmed, Cooking, Out for delivery",
+    "Deterministic 6-second reel tour driven by seek(t)"
+  ]
+}

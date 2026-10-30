@@ -1,0 +1,15 @@
+{
+  "slug": "store",
+  "name": "Threadline",
+  "niche": "Fashion e-commerce",
+  "tagline": "An editorial clothing store: filter the edit, open a quick view, and check out in three steps.",
+  "accent": "#2934c4",
+  "bg": "#f4f1ea",
+  "features": [
+    "12 garments, sneakers and bags illustrated in SVG, with colourways",
+    "Category tabs, size and price chips, and sorting that re-flow the grid",
+    "Quick view with colour and size pickers (sold-out sizes disabled)",
+    "Bag drawer with quantities, ₹ totals and a free-shipping thread bar",
+    "Three-step mock checkout: address, payment, confirmed"
+  ]
+}

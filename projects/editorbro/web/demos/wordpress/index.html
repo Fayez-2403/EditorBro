@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meridian Freight · Ocean, air and overland logistics</title>
+  <meta name="description" content="Meridian Freight moves ocean, air and overland cargo with one booking desk and one tracking link. A fictional brand built with EditorBro." />
+  <meta name="theme-color" content="#0B1B2B" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="wrap topbar__in">
+      <ul class="topbar__info">
+        <li><span data-icon="phone"></span><a href="tel:+912255500142">+91 22 5550 0142</a></li>
+        <li class="hide-sm"><span data-icon="mail"></span><a href="mailto:ops@meridianfreight.example">ops@meridianfreight.example</a></li>
+        <li class="hide-md"><span data-icon="clock"></span>Control tower open 24/7</li>
+      </ul>
+      <ul class="topbar__links">
+        <li><a href="#track"><span data-icon="box"></span>Track shipment</a></li>
+        <li class="hide-sm"><a href="#footer">Careers</a></li>
+        <li class="hide-sm"><a href="#footer">Partner login</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <header class="site-header" id="header">
+    <div class="wrap header__in">
+      <a class="brand" href="#top" aria-label="Meridian Freight home">
+        <span data-logo></span>
+        <span class="brand__word"><b>Meridian</b><small>Freight</small></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="menu">
+          <li class="menu__item is-current"><a href="#top">Home</a></li>
+          <li class="menu__item has-sub">
+            <button class="menu__toggle" aria-expanded="false" aria-controls="dd-services">Services <span data-icon="chevD" data-icon-class="ico chev"></span></button>
+            <div class="dropdown dropdown--mega" id="dd-services">
+              <ul class="dd-list">
+                <li><a href="#services"><span class="dd-ico" data-icon="ship"></span><span><b>Ocean Freight</b><small>FCL and LCL on 42 weekly lanes</small></span></a></li>
+                <li><a href="#services"><span class="dd-ico" data-icon="plane"></span><span><b>Air Cargo</b><small>Consolidated and charter, 48 h options</small></span></a></li>
+                <li><a href="#services"><span class="dd-ico" data-icon="truck"></span><span><b>Road &amp; Rail</b><small>Double-stack rail and our own fleet</small></span></a></li>
+                <li><a href="#services"><span class="dd-ico" data-icon="warehouse"></span><span><b>Warehousing</b><small>Nine bonded sites, WMS included</small></span></a></li>
+                <li><a href="#services"><span class="dd-ico" data-icon="customs"></span><span><b>Customs Brokerage</b><small>Filed and cleared in-house</small></span></a></li>
+                <li><a href="#services"><span class="dd-ico" data-icon="crane"></span><span><b>Project Cargo</b><small>Heavy-lift and out-of-gauge</small></span></a></li>
+              </ul>
+              <a class="dd-promo" href="#news">
+                <span class="dd-promo__tag">Guide</span>
+                <b>Peak season 2026: book ocean space six weeks out</b>
+                <span class="dd-promo__more">Read the calendar <span data-icon="arrowR"></span></span>
+              </a>
+            </div>
+          </li>
+          <li class="menu__item has-sub">
+            <button class="menu__toggle" aria-expanded="false" aria-controls="dd-industries">Industries <span data-icon="chevD" data-icon-class="ico chev"></span></button>
+            <div class="dropdown dropdown--simple" id="dd-industries">
+              <ul class="dd-list">
+                <li><a href="#services"><span class="dd-ico" data-icon="capsule"></span><span><b>Pharma &amp; cold chain</b></span></a></li>
+                <li><a href="#services"><span class="dd-ico" data-icon="car"></span><span><b>Automotive</b></span></a></li>
+                <li><a href="#services"><span class="dd-ico" data-icon="bag"></span><span><b>Retail &amp; e-commerce</b></span></a></li>
+                <li><a href="#services"><span class="dd-ico" data-icon="bolt"></span><span><b>Energy &amp; projects</b></span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item"><a href="#track">Tracking</a></li>
+          <li class="menu__item"><a href="#stats">About</a></li>
+          <li class="menu__item"><a href="#news">News</a></li>
+          <li class="menu__item"><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--signal header__cta" href="#footer">Get a quote</a>
+      <button class="burger" aria-expanded="false" aria-controls="mnav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mnav" id="mnav" aria-label="Mobile menu">
+      <ul class="mnav__list">
+        <li class="mnav__item is-current"><a href="#top">Home</a></li>
+        <li class="mnav__item mnav__item--sub">
+          <button class="mnav__toggle" aria-expanded="false" aria-controls="mnav-services">Services <span class="mnav__plus" data-icon="plus"></span></button>
+          <ul class="mnav__sub" id="mnav-services">
+            <li><a href="#services"><span data-icon="ship"></span>Ocean Freight</a></li>
+            <li><a href="#services"><span data-icon="plane"></span>Air Cargo</a></li>
+            <li><a href="#services"><span data-icon="truck"></span>Road &amp; Rail</a></li>
+            <li><a href="#services"><span data-icon="warehouse"></span>Warehousing</a></li>
+            <li><a href="#services"><span data-icon="customs"></span>Customs</a></li>
+            <li><a href="#services"><span data-icon="crane"></span>Project Cargo</a></li>
+          </ul>
+        </li>
+        <li class="mnav__item mnav__item--sub">
+          <button class="mnav__toggle" aria-expanded="false" aria-controls="mnav-industries">Industries <span class="mnav__plus" data-icon="plus"></span></button>
+          <ul class="mnav__sub" id="mnav-industries">
+            <li><a href="#services"><span data-icon="capsule"></span>Pharma</a></li>
+            <li><a href="#services"><span data-icon="car"></span>Automotive</a></li>
+            <li><a href="#services"><span data-icon="bag"></span>Retail</a></li>
+            <li><a href="#services"><span data-icon="bolt"></span>Energy</a></li>
+          </ul>
+        </li>
+        <li class="mnav__item"><a href="#track">Tracking</a></li>
+        <li class="mnav__item"><a href="#stats">About</a></li>
+        <li class="mnav__item"><a href="#news">News</a></li>
+        <li class="mnav__item"><a href="#footer">Contact</a></li>
+      </ul>
+      <div class="mnav__foot">
+        <a class="btn btn--signal" href="#footer">Get a quote</a>
+        <a class="mnav__phone" href="tel:+912255500142"><span data-icon="phone"></span>+91 22 5550 0142</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-roledescription="carousel" aria-label="Meridian Freight services">
+      <div class="hero__slides">
+        <article class="slide" data-art="ocean" aria-roledescription="slide" aria-label="1 of 3">
+          <div class="slide__art"></div>
+          <div class="slide__shade"></div>
+          <div class="wrap slide__copy">
+            <p class="eyebrow eyebrow--light">Ocean freight · FCL &amp; LCL</p>
+            <h1 class="slide__title">Port to door, on a schedule you can plan.</h1>
+            <p class="slide__lede">Weekly sailings on 42 lanes, one booking desk, and a live ETA for every container, from factory gate to your dock.</p>
+            <div class="slide__cta"><a class="btn btn--signal" href="#footer">Get a quote <span data-icon="arrowR"></span></a><a class="btn btn--ghost" href="#services">Sailing schedule</a></div>
+          </div>
+          <div class="hud" aria-hidden="true"><i class="hud__line"></i><div class="hud__card"><b><i class="hud__dot"></i>MRDN VEGA · 9,400 TEU</b><span>NHV → RTM · ETA 04 NOV · ON TIME</span></div></div>
+        </article>
+        <article class="slide" data-art="road" aria-roledescription="slide" aria-label="2 of 3">
+          <div class="slide__art"></div>
+          <div class="slide__shade"></div>
+          <div class="wrap slide__copy">
+            <p class="eyebrow eyebrow--light">Road &amp; rail · Pan-India</p>
+            <h2 class="slide__title">Overland lanes that run like a timetable.</h2>
+            <p class="slide__lede">Rail for the long haul, our own trucks for the first and last mile, and one tracking link that follows the box across both.</p>
+            <div class="slide__cta"><a class="btn btn--signal" href="#footer">Plan a lane <span data-icon="arrowR"></span></a><a class="btn btn--ghost" href="#services">Coverage map</a></div>
+          </div>
+          <div class="hud" aria-hidden="true"><i class="hud__line"></i><div class="hud__card"><b><i class="hud__dot"></i>MF RAIL 72 · 84 TEU</b><span>NAG → NHV · 41 KM/H · ON TIME</span></div></div>
+        </article>
+        <article class="slide" data-art="air" aria-roledescription="slide" aria-label="3 of 3">
+          <div class="slide__art"></div>
+          <div class="slide__shade"></div>
+          <div class="wrap slide__copy">
+            <p class="eyebrow eyebrow--light">Air cargo · 48 h door to door</p>
+            <h2 class="slide__title">When it cannot wait, it flies tonight.</h2>
+            <p class="slide__lede">Consolidated and charter air from six Indian gateways, with customs filed before the wheels touch down.</p>
+            <div class="slide__cta"><a class="btn btn--signal" href="#footer">Book air cargo <span data-icon="arrowR"></span></a><a class="btn btn--ghost" href="#services">Cut-off times</a></div>
+          </div>
+          <div class="hud" aria-hidden="true"><i class="hud__line"></i><div class="hud__card"><b><i class="hud__dot"></i>MF 2207 · BOM → FRA</b><span>FL 360 · 2.4 T · ETA 06:40</span></div></div>
+        </article>
+      </div>
+
+      <div class="wrap hero__ui">
+        <ol class="hero__tabs" aria-label="Choose slide">
+          <li><button class="hero__tab" data-go="0"><span class="hero__num">01</span><span class="hero__name">Ocean</span><span class="hero__bar"><i></i></span></button></li>
+          <li><button class="hero__tab" data-go="1"><span class="hero__num">02</span><span class="hero__name">Road &amp; rail</span><span class="hero__bar"><i></i></span></button></li>
+          <li><button class="hero__tab" data-go="2"><span class="hero__num">03</span><span class="hero__name">Air</span><span class="hero__bar"><i></i></span></button></li>
+        </ol>
+        <div class="hero__arrows">
+          <button class="round" data-dir="-1" aria-label="Previous slide"><span data-icon="arrowL"></span></button>
+          <button class="round" data-dir="1" aria-label="Next slide"><span data-icon="arrowR"></span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="track" id="track" aria-label="Track a shipment">
+      <div class="wrap">
+        <form class="track__card" novalidate>
+          <div class="track__label"><span data-icon="box"></span><div><b>Track a shipment</b><small>Container, AWB or booking number</small></div></div>
+          <div class="track__field">
+            <input id="track-input" name="ref" autocomplete="off" spellcheck="false" placeholder="e.g. MRDU 418207-3" aria-label="Container, AWB or booking number" />
+            <button class="btn btn--ink" type="submit">Track <span data-icon="arrowR"></span></button>
+          </div>
+          <div class="track__result" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow">What we move</p>
+          <h2>Six ways to move it. <span>One desk to call.</span></h2>
+          <p class="sec-head__lede">Every mode runs on the same booking desk and the same tracking link, so a box that changes from ship to train never drops out of sight.</p>
+        </header>
+        <ul class="svc-grid">
+          <li class="svc reveal"><span class="svc__no">01</span><span class="svc__ico" data-icon="ship"></span><h3>Ocean Freight</h3><p>FCL and LCL on 42 weekly lanes, reefer and hazardous included.</p><a href="#footer" class="more">Explore <span data-icon="arrowR"></span></a></li>
+          <li class="svc reveal"><span class="svc__no">02</span><span class="svc__ico" data-icon="plane"></span><h3>Air Cargo</h3><p>Consolidated and charter air from six Indian gateways.</p><a href="#footer" class="more">Explore <span data-icon="arrowR"></span></a></li>
+          <li class="svc reveal"><span class="svc__no">03</span><span class="svc__ico" data-icon="truck"></span><h3>Road &amp; Rail</h3><p>Double-stack rail for distance, our own trucks for the last mile.</p><a href="#footer" class="more">Explore <span data-icon="arrowR"></span></a></li>
+          <li class="svc reveal"><span class="svc__no">04</span><span class="svc__ico" data-icon="warehouse"></span><h3>Warehousing</h3><p>Nine bonded and free-trade sites, with the WMS included.</p><a href="#footer" class="more">Explore <span data-icon="arrowR"></span></a></li>
+          <li class="svc reveal"><span class="svc__no">05</span><span class="svc__ico" data-icon="customs"></span><h3>Customs</h3><p>Licensed brokers file and clear in-house, with no hand-offs.</p><a href="#footer" class="more">Explore <span data-icon="arrowR"></span></a></li>
+          <li class="svc reveal"><span class="svc__no">06</span><span class="svc__ico" data-icon="crane"></span><h3>Project Cargo</h3><p>Heavy-lift and out-of-gauge, surveyed before the first lift.</p><a href="#footer" class="more">Explore <span data-icon="arrowR"></span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="stats" id="stats" aria-label="Meridian Freight in numbers">
+      <div class="stats__bg" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="stats__head"><p class="eyebrow eyebrow--light">In numbers</p><p class="stats__intro">Twelve years, one desk, and a network built lane by lane.</p></div>
+        <dl class="stats__grid">
+          <div class="stat"><dt class="stat__label">TEU moved every month</dt><dd class="stat__num" data-to="14200" data-suffix="+">0</dd></div>
+          <div class="stat"><dt class="stat__label">Weekly ocean lanes</dt><dd class="stat__num" data-to="42">0</dd></div>
+          <div class="stat"><dt class="stat__label">On-time delivery, last 12 months</dt><dd class="stat__num" data-to="98.7" data-dec="1" data-suffix="%">0</dd></div>
+          <div class="stat"><dt class="stat__label">Control tower, staffed by people</dt><dd class="stat__num" data-to="24" data-suffix="/7">0</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews" aria-roledescription="carousel" aria-label="What shippers say">
+      <div class="wrap reviews__in">
+        <div class="reviews__intro">
+          <p class="eyebrow">Testimonials</p>
+          <h2>Shippers who stopped chasing updates.</h2>
+          <div class="rating"><span class="stars" data-stars></span><span><b>4.8</b> average from 310 shipper reviews</span></div>
+          <div class="reviews__nav">
+            <button class="round round--ink" data-rdir="-1" aria-label="Previous testimonial"><span data-icon="arrowL"></span></button>
+            <button class="round round--ink" data-rdir="1" aria-label="Next testimonial"><span data-icon="arrowR"></span></button>
+          </div>
+        </div>
+        <div class="reviews__viewport">
+          <div class="reviews__track">
+            <figure class="quote">
+              <span class="quote__mark" aria-hidden="true">“</span>
+              <blockquote>We used to spend Monday mornings calling three forwarders for an ETA. Now there is one link, and it is right.</blockquote>
+              <figcaption><span class="avatar" style="--h:18">RM</span><span><b>Ritika Menon</b><small>Head of Supply Chain, Kaveri Textiles</small></span></figcaption>
+            </figure>
+            <figure class="quote">
+              <span class="quote__mark" aria-hidden="true">“</span>
+              <blockquote>Our reefer shipments to Rotterdam hold 2–8 °C end to end, and the temperature log lands before the container does.</blockquote>
+              <figcaption><span class="avatar" style="--h:200">AB</span><span><b>Arjun Bhatt</b><small>Logistics Director, Northline Pharma</small></span></figcaption>
+            </figure>
+            <figure class="quote">
+              <span class="quote__mark" aria-hidden="true">“</span>
+              <blockquote>Peak season used to mean missed sailings. They booked us six weeks out and we did not lose a single slot.</blockquote>
+              <figcaption><span class="avatar" style="--h:150">SQ</span><span><b>Sana Qureshi</b><small>Imports Manager, Solace Home Retail</small></span></figcaption>
+            </figure>
+            <figure class="quote">
+              <span class="quote__mark" aria-hidden="true">“</span>
+              <blockquote>Customs was our black box. Their brokers flag a missing document the day we book, not the day it lands.</blockquote>
+              <figcaption><span class="avatar" style="--h:30">VR</span><span><b>Vikram Rao</b><small>COO, Deccan Auto Components</small></span></figcaption>
+            </figure>
+          </div>
+          <div class="dots" role="tablist" aria-label="Choose testimonial"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news" id="news">
+      <div class="wrap">
+        <header class="sec-head sec-head--row">
+          <div><p class="eyebrow">From the logistics desk</p><h2>News &amp; field notes</h2></div>
+          <a class="more more--lg" href="#news">All articles <span data-icon="arrowR"></span></a>
+        </header>
+        <div class="news__grid">
+          <article class="post reveal">
+            <a href="#news" class="post__thumb" data-thumb="calendar" aria-hidden="true" tabindex="-1"></a>
+            <div class="post__body">
+              <p class="post__meta"><span class="tag">Guide</span><time datetime="2026-10-21">21 Oct 2026</time></p>
+              <h3><a href="#news">Peak season 2026: why we book ocean space six weeks out</a></h3>
+              <p>Blank sailings and tight equipment make the last fortnight the most expensive. Here is the calendar we plan with.</p>
+            </div>
+          </article>
+          <article class="post reveal">
+            <a href="#news" class="post__thumb" data-thumb="reefer" aria-hidden="true" tabindex="-1"></a>
+            <div class="post__body">
+              <p class="post__meta"><span class="tag">Cold chain</span><time datetime="2026-10-08">08 Oct 2026</time></p>
+              <h3><a href="#news">Reefer containers, explained: 2–8 °C across an ocean</a></h3>
+              <p>Setpoints, pre-trip inspections and the data logger: what keeps a pharma box in band for 24 days at sea.</p>
+            </div>
+          </article>
+          <article class="post reveal">
+            <a href="#news" class="post__thumb" data-thumb="tower" aria-hidden="true" tabindex="-1"></a>
+            <div class="post__body">
+              <p class="post__meta"><span class="tag">Inside Meridian</span><time datetime="2026-09-24">24 Sep 2026</time></p>
+              <h3><a href="#news">One screen, every shipment: a night in our control tower</a></h3>
+              <p>Who watches the boxes at 3 a.m., what they look for, and when they pick up the phone before you do.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-label="Request a quote">
+      <div class="wrap cta-band__in">
+        <div><p class="eyebrow eyebrow--ink">Ready when your cargo is</p><h2>Get a quote in two working hours.</h2></div>
+        <div class="cta-band__actions"><a class="btn btn--ink" href="#footer">Request a quote <span data-icon="arrowR"></span></a><a class="cta-band__phone" href="tel:+912255500142"><span data-icon="phone"></span>+91 22 5550 0142</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="wrap footer__grid">
+      <div class="widget widget--about">
+        <a class="brand brand--light" href="#top"><span data-logo></span><span class="brand__word"><b>Meridian</b><small>Freight</small></span></a>
+        <p>Ocean, air and overland cargo for manufacturers and importers, with one booking desk and one tracking link from booking to delivery.</p>
+        <ul class="contact-list">
+          <li><span data-icon="pin"></span>Meridian House, Harbour Road, Navi Mumbai</li>
+          <li><span data-icon="phone"></span>+91 22 5550 0142</li>
+          <li><span data-icon="mail"></span>ops@meridianfreight.example</li>
+        </ul>
+      </div>
+      <div class="widget">
+        <h4 class="widget__title">Services</h4>
+        <ul class="links"><li><a href="#services">Ocean Freight</a></li><li><a href="#services">Air Cargo</a></li><li><a href="#services">Road &amp; Rail</a></li><li><a href="#services">Warehousing</a></li><li><a href="#services">Customs Brokerage</a></li><li><a href="#services">Project Cargo</a></li></ul>
+      </div>
+      <div class="widget">
+        <h4 class="widget__title">Recent posts</h4>
+        <ul class="recent">
+          <li><a href="#news">Peak season 2026: why we book six weeks out</a><time>21 Oct 2026</time></li>
+          <li><a href="#news">Reefer containers, explained</a><time>08 Oct 2026</time></li>
+          <li><a href="#news">A night in our control tower</a><time>24 Sep 2026</time></li>
+        </ul>
+      </div>
+      <div class="widget">
+        <h4 class="widget__title">Lane-rate newsletter</h4>
+        <p>Spot rates and space on our top lanes, every Monday at 9.</p>
+        <form class="news-form" novalidate>
+          <input type="email" required placeholder="you@company.com" aria-label="Email address" />
+          <button class="btn btn--signal" type="submit">Subscribe</button>
+        </form>
+        <p class="news-form__msg" aria-live="polite"></p>
+      </div>
+    </div>
+    <div class="wrap footer__bar">
+      <span>© 2026 Meridian Freight Pvt. Ltd. · <a href="#footer">Privacy</a> · <a href="#footer">Terms</a></span>
+      <span class="demo-line">Demo · fictional brand · built with EditorBro</span>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/demos/wordpress/main.ts"></script>
+</body>
+</html>

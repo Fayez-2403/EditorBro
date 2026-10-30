@@ -1,0 +1,14 @@
+Ye GTA 6 ka trailer nahi hai. 😮 Poora scene code hai.
+
+Highway, billboard, palm trees, truck: sab Three.js mein likha. Camera se ek bhi frame nahi aaya.
+
+Mera repo EditorBro ek poora motion studio hai jo Claude Code chalata hai:
+→ 64 skills, 1 pipeline, 12 quality gates
+→ 20+ reels: 3D, cartoons, data stories, product films
+→ 9 demo websites: brand, e-commerce, food ordering, delivery tracking, loyalty app, end-to-end encrypted chat, automation builder, WordPress theme, corporate site (fictional demo brands)
+→ Har step ka article, prompt se final render tak
+
+Fork karo, clone karo, apna studio banao.
+Repo ka link chahiye? Comment karo "EDITOR" 👇
+
+#EditorBro #ClaudeCode #MotionDesign #ThreeJS #Remotion #OpenSource #CreativeCoding #AIVideo #WebDevelopment #TechPeTrek

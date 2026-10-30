@@ -1,0 +1,15 @@
+{
+  "name": "motion-studio",
+  "private": true,
+  "type": "module",
+  "description": "Node side of the motion-studio skill: Puppeteer renders HTML UI/cards/titles to transparent PNG frames; GSAP, Three.js and Tone.js are here for HTML plates and synth sound.",
+  "scripts": {
+    "cards": "node render_html.mjs"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "puppeteer-core": "^25.16.0",
+    "three": "^0.186.1",
+    "tone": "^15.1.22"
+  }
+}

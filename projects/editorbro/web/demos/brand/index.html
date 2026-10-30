@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LUMA Halo · Wireless noise-cancelling headphones</title>
+  <meta name="description" content="LUMA Halo over-ear wireless headphones: adaptive noise cancelling, a 48-hour battery and head-tracked spatial audio. Demo site for a fictional brand." />
+  <meta name="theme-color" content="#0a0a0b" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <canvas id="stage" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="logo" href="#top" aria-label="LUMA Audio, home">
+      <svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="10.5" fill="none" stroke="currentColor" stroke-width="1.6" /><circle cx="14" cy="14" r="4" fill="var(--accent)" /></svg>
+      <span>LUMA</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#top">Halo</a>
+      <a href="#sound">Sound</a>
+      <a href="#specs">Specs</a>
+      <a href="#buy">Support</a>
+    </nav>
+    <button class="bag" id="bag" type="button" aria-label="Bag, 0 items">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8.5h13l-1 11.5h-11z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" /><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5" fill="none" stroke="currentColor" stroke-width="1.5" /></svg>
+      <span class="bag-count" id="bagCount">0</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>New · LUMA Halo</p>
+        <h1 class="hero-title" id="heroTitle">
+          <span class="ln"><span>Silence,</span></span>
+          <span class="ln"><em class="sheen">sculpted.</em></span>
+        </h1>
+        <p class="hero-sub">Adaptive noise cancelling, a 48-hour battery and spatial audio that follows your head.</p>
+      </div>
+
+      <div class="hero-stage stage-slot" id="heroStage" aria-hidden="true"></div>
+
+      <div class="buy-panel" id="buyPanel">
+        <div class="variant-row">
+          <div class="swatches" role="radiogroup" aria-label="Colour" id="swatches">
+            <span class="swatch-ring" id="swatchRing" aria-hidden="true"></span>
+            <button class="swatch" role="radio" aria-checked="true" data-variant="graphite" type="button" aria-label="Graphite"><span class="chip" style="--c1:#5a5e66;--c2:#23252a"></span></button>
+            <button class="swatch" role="radio" aria-checked="false" data-variant="sand" type="button" aria-label="Sand"><span class="chip" style="--c1:#eadcc2;--c2:#bba57f"></span></button>
+            <button class="swatch" role="radio" aria-checked="false" data-variant="ember" type="button" aria-label="Ember"><span class="chip" style="--c1:#e0643f;--c2:#8e3421"></span></button>
+          </div>
+          <div class="variant-name">
+            <span class="label">Colour</span>
+            <span class="roller" aria-live="polite"><span class="roll" id="roll"><span>Graphite</span><span>Sand</span><span>Ember</span></span></span>
+          </div>
+        </div>
+        <div class="buy-row">
+          <a class="btn btn-buy" href="#buy" data-buy>
+            <span class="btn-label">Buy ₹24,990</span>
+            <span class="btn-done" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>Added to bag</span>
+          </a>
+          <a class="btn btn-ghost" href="#sound">Listen closer</a>
+        </div>
+        <p class="fine">Free delivery · 30-night trial · 2-year warranty</p>
+      </div>
+      <p class="scroll-cue" aria-hidden="true"><span></span>Scroll</p>
+    </section>
+
+    <section class="story" id="sound" aria-label="Features">
+      <div class="story-stage stage-slot" id="storyStage" aria-hidden="true"></div>
+      <article class="chapter" data-ch="0">
+        <div class="ch-inner">
+          <p class="kicker"><span>01</span> Battery</p>
+          <p class="stat"><span class="num" data-to="48">48</span><span class="unit">h</span></p>
+          <h2>One charge. <em>A week of commutes.</em></h2>
+          <p class="body">Forty-eight hours with noise cancelling on. Ten minutes on USB-C buys you six more.</p>
+          <p class="sample">Sample figures for a fictional product</p>
+        </div>
+      </article>
+      <article class="chapter" data-ch="1">
+        <div class="ch-inner">
+          <p class="kicker"><span>02</span> Adaptive ANC</p>
+          <p class="stat"><span class="minus">−</span><span class="num" data-to="35">35</span><span class="unit">dB</span></p>
+          <h2>The city, turned down <em>to a hush.</em></h2>
+          <p class="body">Eight microphones read the room and retune the cancelling for a metro rumble or a ceiling fan.</p>
+          <p class="sample">Sample figures for a fictional product</p>
+        </div>
+      </article>
+      <article class="chapter" data-ch="2">
+        <div class="ch-inner">
+          <p class="kicker"><span>03</span> Spatial audio</p>
+          <p class="stat"><span class="num" data-to="360">360</span><span class="unit">°</span></p>
+          <h2>Sound that stays <em>where the stage is.</em></h2>
+          <p class="body">Head tracking keeps the band in front of you when you turn to the window.</p>
+          <p class="sample">Sample figures for a fictional product</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="cta" id="buy" aria-labelledby="ctaTitle">
+      <div class="cta-copy">
+        <p class="kicker"><span>04</span> Yours in two days</p>
+        <h2 id="ctaTitle">Hear the room <em>disappear.</em></h2>
+        <p class="cta-sub">Every Halo ships with a felt case, both cables and thirty nights to decide. If the quiet isn't for you, we collect it from your door.</p>
+      </div>
+      <div class="cta-stage stage-slot" id="ctaStage" aria-hidden="true"></div>
+      <div class="cta-buy">
+        <div class="price-row">
+          <div>
+            <p class="p-name">LUMA Halo</p>
+            <p class="p-var"><span class="dot" aria-hidden="true"></span><span><span id="ctaVariant">Graphite</span> · in stock</span></p>
+          </div>
+          <p class="p-price">₹24,990<span>incl. GST</span></p>
+        </div>
+        <a class="btn btn-buy btn-wide" href="#buy" data-buy id="ctaBuy">
+          <span class="btn-label">Buy ₹24,990</span>
+          <span class="btn-done" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>Added to bag</span>
+        </a>
+        <ul class="perks">
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 6.5h9v7h-9zM11.5 9h3.5l2.5 2.5v2h-6z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" /><circle cx="6" cy="14.5" r="1.4" fill="var(--bg)" stroke="currentColor" stroke-width="1.3" /><circle cx="14.5" cy="14.5" r="1.4" fill="var(--bg)" stroke="currentColor" stroke-width="1.3" /></svg>Free delivery</li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3a7 7 0 1 0 6.3 4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" /><path d="M16.5 3v4h-4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" /></svg>30-night trial</li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.5l6 2.5v4.5c0 4-2.6 6.6-6 8-3.4-1.4-6-4-6-8V5z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" /></svg>2-year warranty</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="specs" id="specs" aria-labelledby="specsTitle">
+      <div class="specs-head">
+        <p class="kicker"><span>05</span> The details</p>
+        <h2 id="specsTitle">Engineered <em>quietly.</em></h2>
+        <p class="sample">All figures are sample values for a fictional product.</p>
+      </div>
+      <dl class="spec-grid">
+        <div><dt>Drivers</dt><dd>40 mm dynamic, bio-cellulose cone</dd></div>
+        <div><dt>Battery</dt><dd>48 h with ANC · 10 min for 6 h</dd></div>
+        <div><dt>Noise cancelling</dt><dd>Adaptive, 8 microphones</dd></div>
+        <div><dt>Spatial audio</dt><dd>Head-tracked, per-app memory</dd></div>
+        <div><dt>Connection</dt><dd>Bluetooth 5.4, two devices at once</dd></div>
+        <div><dt>Codecs</dt><dd>SBC · AAC · LC3</dd></div>
+        <div><dt>Weight</dt><dd>254 g</dd></div>
+        <div><dt>In the box</dt><dd>Felt case, USB-C cable, 3.5 mm cable</dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-top">
+      <a class="logo" href="#top" aria-label="LUMA Audio, back to top">
+        <svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="10.5" fill="none" stroke="currentColor" stroke-width="1.6" /><circle cx="14" cy="14" r="4" fill="var(--accent)" /></svg>
+        <span>LUMA</span>
+      </a>
+      <p class="foot-line">Made for listening, <em>not for noise.</em></p>
+    </div>
+    <div class="foot-cols">
+      <div><h3>Shop</h3><a href="#top">LUMA Halo</a><a href="#specs">Compare</a><a href="#buy">Gift cards</a></div>
+      <div><h3>Support</h3><a href="#buy">Delivery</a><a href="#buy">Returns</a><a href="#buy">Warranty</a></div>
+      <div><h3>Studio</h3><a href="#sound">Listening room</a><a href="#sound">Journal</a><a href="#top">Careers</a></div>
+    </div>
+    <p class="demo-line">Demo · fictional brand · built with EditorBro</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="tap" id="tap" aria-hidden="true"><span class="tap-dot"></span><span class="tap-ring"></span></div>
+  <script type="module" src="/src/demos/brand/main.ts"></script>
+</body>
+</html>

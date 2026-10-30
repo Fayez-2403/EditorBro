@@ -1,0 +1,14 @@
+{
+  "slug": "brand",
+  "name": "LUMA Audio",
+  "niche": "Premium DTC headphones",
+  "tagline": "A studio-lit 3D product page: switch the colourway and the headphones recolour live.",
+  "accent": "#ff7a4d",
+  "bg": "#0a0a0b",
+  "features": [
+    "Three.js headphone model built from primitives, studio-lit on a turntable",
+    "Graphite, Sand and Ember swatches recolour the model and the page accent live",
+    "Scroll story with a sticky product: battery ticks, ANC rings and spatial-audio orbits",
+    "Buy ₹24,990 CTA with an add-to-bag state and bag counter"
+  ]
+}

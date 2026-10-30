@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vaultline · Messages only the two of you can read</title>
+  <meta name="description" content="Vaultline is a fictional end-to-end encrypted messenger. This page runs real ECDH + AES-GCM encryption in your browser. Demo, not an audited product." />
+  <meta name="theme-color" content="#0C0D11" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip" href="#demo">Skip to the live demo</a>
+  <header class="hdr">
+    <div class="wrap hdr__in">
+      <a class="logo" href="#top" aria-label="Vaultline home">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="26" height="26" rx="8.5" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="16" cy="13.2" r="3.6" fill="#9DAAFF"/><path d="M14.4 15.6 13 23h6l-1.4-7.4z" fill="#9DAAFF"/></svg>
+        <span>Vaultline</span>
+      </a>
+      <nav class="nav" aria-label="Primary"><a href="#demo">Live demo</a><a href="#how">How it works</a><a href="#security">Security</a></nav>
+      <span class="badge"><i></i>Demo · not audited</span>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <p class="kicker">End-to-end encrypted messenger</p>
+        <h1>Messages only <span class="hl">the two of you</span> can read.</h1>
+        <p class="lede">Every message is sealed on the sender's device with a key the server never sees. Type below: this page runs real ECDH and AES-GCM in your browser.</p>
+        <p class="honest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 8.4 7.5 9.5 4.4-1.1 7.5-4.9 7.5-9.5V6z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>Keys stay in this tab. Demo, not an audited product.</p>
+      </div>
+    </section>
+
+    <section class="demo" id="demo" aria-label="Live encryption demo">
+      <div class="wrap">
+        <div class="stage">
+          <article class="phone" id="asha" aria-label="Asha's device">
+            <header class="phone__hd">
+              <span class="ava ava--a">A</span>
+              <div><b>Asha</b><small class="fp" data-fp="asha">key ···· ····</small></div>
+              <span class="pill"><i></i>Device 1</span>
+            </header>
+            <div class="thread" aria-live="polite"></div>
+            <form class="composer" novalidate>
+              <input type="text" maxlength="140" autocomplete="off" placeholder="Write to Ben…" aria-label="Message from Asha to Ben" />
+              <button type="submit" class="send" aria-label="Encrypt and send"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            </form>
+          </article>
+
+          <article class="server" aria-label="Relay server view">
+            <header class="server__hd">
+              <div><b>Relay server</b><small>Everything it can see</small></div>
+              <span class="pill pill--warn"><i></i>Cannot decrypt</span>
+            </header>
+            <ol class="log" aria-live="polite"></ol>
+            <label class="tamper"><input type="checkbox" id="tamper" /><span class="tamper__box" aria-hidden="true"></span><span>Tamper in transit<small>Flip one bit before delivery</small></span></label>
+          </article>
+
+          <article class="phone" id="ben" aria-label="Ben's device">
+            <header class="phone__hd">
+              <span class="ava ava--b">B</span>
+              <div><b>Ben</b><small class="fp" data-fp="ben">key ···· ····</small></div>
+              <span class="pill"><i></i>Device 2</span>
+            </header>
+            <div class="thread" aria-live="polite"></div>
+            <form class="composer" novalidate>
+              <input type="text" maxlength="140" autocomplete="off" placeholder="Reply to Asha…" aria-label="Message from Ben to Asha" />
+              <button type="submit" class="send" aria-label="Encrypt and send"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            </form>
+          </article>
+          <div class="packet" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.5" fill="currentColor"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg><span></span></div>
+        </div>
+
+        <div class="verify" id="verify">
+          <div class="verify__copy">
+            <p class="kicker kicker--sm">Safety number</p>
+            <h2>Same number on both phones? <span class="hl">Nobody is in the middle.</span></h2>
+            <p>Asha and Ben each hash both public keys with SHA-256 on their own device. Read the twelve groups to each other; if they match, the keys are really theirs.</p>
+            <div class="verify__actions"><button class="btn btn--ghost" id="rotate" type="button">Generate new keys</button></div>
+          </div>
+          <div class="sn">
+            <div class="sn__who"><span><span class="ava ava--a ava--sm">A</span>Asha's screen</span><span class="sn__match"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Matches Ben's</span></div>
+            <ol class="sn__grid" aria-label="Safety number"></ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="how">
+      <div class="wrap">
+        <p class="kicker kicker--sm">How it works</p>
+        <h2>Three steps, all on the device.</h2>
+        <ol class="steps">
+          <li><span class="step__n">01</span><h3>Agree on a key</h3><p>Each phone makes an ECDH P-256 key pair. Swapping only the public halves, both sides derive the same AES-GCM-256 key. The server relays public keys and nothing else.</p><code>deriveKey(ECDH, P-256) → AES-GCM-256</code></li>
+          <li><span class="step__n">02</span><h3>Seal every message</h3><p>Each message gets a fresh 96-bit IV and is encrypted with AES-GCM. The 128-bit tag means any change in transit is detected, so the message is rejected rather than shown.</p><code>encrypt(AES-GCM, iv = 12 random bytes)</code></li>
+          <li><span class="step__n">03</span><h3>Check the safety number</h3><p>A SHA-256 hash over both public keys, shown as twelve five-digit groups. Compare it once in person or on a call to rule out a swapped key.</p><code>SHA-256(pubA ‖ pubB) → 60 digits</code></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="security" id="security">
+      <div class="wrap security__in">
+        <div>
+          <p class="kicker kicker--sm">Security notes</p>
+          <h2>What this demo is, <span class="hl">and what it is not.</span></h2>
+        </div>
+        <dl class="specs">
+          <div><dt>Runs</dt><dd>WebCrypto in this tab. No network calls; the "server" is a panel on this page.</dd></div>
+          <div><dt>Private keys</dt><dd>Generated non-extractable. They cannot be exported and vanish when you close the tab.</dd></div>
+          <div><dt>Per message</dt><dd>A fresh random 96-bit IV, AES-GCM-256 with a 128-bit authentication tag.</dd></div>
+          <div><dt>Filming mode</dt><dd><code>?reel=1</code> imports fixed demo keys and a fixed IV so every frame is repeatable. Never reuse an IV in real use.</dd></div>
+          <div><dt>Not covered</dt><dd>Forward secrecy, key backup, multi-device, metadata hiding. Vaultline is a fictional brand and this is not an audited product.</dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap ftr__in">
+      <a class="logo" href="#top"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="26" height="26" rx="8.5" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="16" cy="13.2" r="3.6" fill="#9DAAFF"/><path d="M14.4 15.6 13 23h6l-1.4-7.4z" fill="#9DAAFF"/></svg><span>Vaultline</span></a>
+      <p>Keys stay in this tab. Demo, not an audited product.</p>
+      <span class="demo-line">Demo · fictional brand · built with EditorBro</span>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/demos/vault/main.ts"></script>
+</body>
+</html>

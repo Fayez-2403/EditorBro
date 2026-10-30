@@ -1,0 +1,32 @@
+{
+ "_doc": "Narration for EditorBro: Welcome to the Studio. 'cap' = Roman Hinglish caption, 'tts' = what Liam reads (Hindi in Devanagari, English words in English); phrase punctuation must match (use '.' not '।': the splitter breaks on , . ? ! : …). Each line opens 'scene'; 'min' = minimum scene length, 'pre' = designed silence before the line. Every claim from docs/factcheck.md (F1-F10). bpm = the original score's tempo.",
+ "bpm": 100,
+ "voice": {"provider": "elevenlabs", "voiceId": "TX3LPaxmHKxFdv7VOQHJ", "name": "Liam", "model": "eleven_turbo_v2_5", "language": "hi",
+           "stability": 0.4, "similarity": 0.75, "speed": 1.12, "seed": 5},
+ "reel": [
+  {"id": "h01", "scene": "hook", "min": 3.9, "pre": 2.4,
+   "cap": "Ye GTA 6 ka trailer nahi hai…",
+   "tts": "ये GTA 6 का trailer नहीं है…"},
+  {"id": "l02", "scene": "flip", "min": 2.4,
+   "cap": "Ye poora scene code hai. Camera se ek bhi frame nahi aaya.",
+   "tts": "ये पूरा scene code है. Camera से एक भी frame नहीं आया."},
+  {"id": "l03", "scene": "prompt", "min": 3.0,
+   "cap": "Main bas ek prompt likhta hoon.",
+   "tts": "मैं बस एक prompt लिखता हूँ."},
+  {"id": "l04", "scene": "pipeline", "min": 6.0,
+   "cap": "Claude Code poora studio chalata hai: 64 skills, ek pipeline, aur 12 quality gates.",
+   "tts": "Claude Code पूरा studio चलाता है: sixty-four skills, एक pipeline, और twelve quality gates."},
+  {"id": "l05", "scene": "montage", "min": 9.6,
+   "cap": "Reels, 3D films, cartoons, data stories, perfume ads. Bees se zyada reels, isi repo se.",
+   "tts": "Reels, 3D films, cartoons, data stories, perfume ads. बीस से ज़्यादा reels, इसी repo से."},
+  {"id": "l06", "scene": "websites", "min": 13.8,
+   "cap": "Aur sirf video nahi. Brand sites, online stores, food delivery, loyalty apps, encrypted chat, automation. Sab yahin se banta hai.",
+   "tts": "और सिर्फ video नहीं. Brand sites, online stores, food delivery, loyalty apps, encrypted chat, automation. सब यहीं से बनता है."},
+  {"id": "l07", "scene": "docs", "min": 4.8,
+   "cap": "Har step ka article likha hai. Prompt se lekar final render tak.",
+   "tts": "हर step का article लिखा है. Prompt से लेकर final render तक."},
+  {"id": "l08", "scene": "cta", "min": 6.6,
+   "cap": "Repo ka naam: EditorBro. Fork karo, clone karo, apna studio banao. Link chahiye? Comment karo EDITOR.",
+   "tts": "Repo का नाम: Editor Bro. Fork करो, clone करो, अपना studio बनाओ. Link चाहिए? Comment करो Editor."}
+ ]
+}

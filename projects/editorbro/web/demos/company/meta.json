@@ -1,0 +1,15 @@
+{
+  "slug": "company",
+  "name": "Halcyon Grid",
+  "niche": "Corporate · grid-scale battery storage",
+  "tagline": "Storage that keeps the grid calm.",
+  "accent": "#7CF2C3",
+  "bg": "#05080C",
+  "features": [
+    "Canvas hero: a twisting ribbon of light lines with charge pulses, drawn as a pure function of time",
+    "Count-up stats band with charging bars",
+    "Accessible solutions tabs (arrow keys) that rebuild isometric SVG scenes on every switch",
+    "Investor-relations chart that draws itself in, plus a sample sustainability-report modal",
+    "Case studies, careers and newsroom sections with a calm night-and-chalk identity"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+ "_doc": "Narration for {{TITLE}}. 'cap' = Roman Hinglish caption, 'tts' = what Liam reads (Hindi in Devanagari, English words in English); phrase punctuation must match. Each line opens 'scene'; 'cut' {phrase, scene} starts another scene at a phrase; 'min' = minimum scene length, 'pre' = designed silence before the line. Every claim from docs/factcheck.md. bpm = the score tempo (a song's MEASURED bpm from audio/beats.json if the reel uses a song).",
+ "bpm": 120,
+ "voice": {"provider": "elevenlabs", "voiceId": "TX3LPaxmHKxFdv7VOQHJ", "name": "Liam", "model": "eleven_turbo_v2_5", "language": "hi",
+           "stability": 0.4, "similarity": 0.75, "speed": 1.2, "seed": 5},
+ "reel": [
+  {"id": "h01", "scene": "hook", "min": 0.0, "cap": "[HOOK LINE]", "tts": "[HOOK LINE]"},
+  {"id": "l02", "scene": "body", "min": 0.0, "cap": "[BODY LINE]", "tts": "[BODY LINE]"},
+  {"id": "l03", "scene": "cta", "min": 2.4, "cap": "[CTA LINE]", "tts": "[CTA LINE]"}
+ ]
+}
