@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EditorBro: a motion studio you run by typing</title>
+  <meta name="description" content="Reels, 3D films, apps and websites built in code by Claude Code from one prompt. Fork the studio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/site/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <canvas id="world" aria-hidden="true"></canvas>
+    <div class="hero-shade"></div>
+    <nav class="nav">
+      <span class="logo">EditorBro</span>
+      <div class="nav-links">
+        <a href="#demos">Demos</a><a href="#flow">How it works</a><a href="#docs">Articles</a>
+        <a class="btn btn-small" href="https://github.com/Fayez-2403/EditorBro">GitHub</a>
+      </div>
+    </nav>
+    <div class="hero-copy">
+      <p class="eyebrow">Open-source motion studio · Claude Code</p>
+      <h1>This highway<br />is <em>code.</em></h1>
+      <p class="lede">EditorBro turns one prompt into reels, 3D films, apps and websites. Every frame is a pure function of time, every cut comes from measured data, every video re-renders from source.</p>
+      <div class="ctas">
+        <a class="btn" href="https://github.com/Fayez-2403/EditorBro/fork">Fork the studio</a>
+        <button class="btn btn-ghost" id="copy">git clone github.com/Fayez-2403/EditorBro</button>
+      </div>
+    </div>
+  </header>
+
+  <section id="flow" class="section">
+    <h2>From prompt to reel</h2>
+    <ol class="flow">
+      <li><span>01</span><b>Prompt</b><p>Describe the reel in plain words. A hook notices it's a video and loads the pipeline.</p></li>
+      <li><span>02</span><b>64 skills</b><p>Brief, hook, voice, motion, sound and QA playbooks, loaded only when a stage needs them.</p></li>
+      <li><span>03</span><b>1 pipeline</b><p>Facts → brief → references → hook → voice → timeline → score → scenes.</p></li>
+      <li><span>04</span><b>12 gates</b><p>VERIFY to FINISH + SHIP. Every review round is scored, and the three worst problems are fixed with numbers.</p></li>
+      <li><span>05</span><b>Render</b><p>Measured, not guessed: loudness, cut sync, flat frames, speech-to-text.</p></li>
+    </ol>
+  </section>
+
+  <section id="demos" class="section">
+    <h2>Not just video</h2>
+    <p class="sub">Nine working websites for fictional brands, built and filmed by the same studio. Open one and click around.</p>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="docs" class="section">
+    <h2>Every step has an article</h2>
+    <ol class="docs" id="docs-list"></ol>
+  </section>
+
+  <footer class="foot">
+    <p>Made by Mohammed Fayez Khan for Tech पे Trek · MIT · demo brands are fictional.</p>
+    <a class="btn" href="https://github.com/Fayez-2403/EditorBro">Star &amp; fork on GitHub</a>
+  </footer>
+  <script type="module" src="/src/site/main.ts"></script>
+</body>
+</html>

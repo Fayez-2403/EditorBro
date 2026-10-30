@@ -468,6 +468,7 @@ projects/editorbro/web/demos/wordpress/wp-theme/meridian/parts/header.html
 projects/editorbro/web/demos/wordpress/wp-theme/meridian/style.css
 projects/editorbro/web/demos/wordpress/wp-theme/meridian/templates/index.html
 projects/editorbro/web/demos/wordpress/wp-theme/meridian/theme.json
+projects/editorbro/web/index.html
 projects/editorbro/web/package-lock.json
 projects/editorbro/web/package.json
 projects/editorbro/web/public/fonts/Fraunces-VF.ttf
@@ -511,6 +512,8 @@ projects/editorbro/web/src/demos/wordpress/main.ts
 projects/editorbro/web/src/demos/wordpress/style.css
 projects/editorbro/web/src/demos/wordpress/util.ts
 projects/editorbro/web/src/reel.ts
+projects/editorbro/web/src/site/main.ts
+projects/editorbro/web/src/site/style.css
 projects/editorbro/web/src/world/highway.ts
 projects/editorbro/web/src/world/rng.ts
 projects/editorbro/web/src/world/sign.ts
