@@ -8,6 +8,8 @@ Mera repo EditorBro ek poora motion studio hai jo Claude Code chalata hai:
 → 9 demo websites: brand, e-commerce, food ordering, delivery tracking, loyalty app, end-to-end encrypted chat, automation builder, WordPress theme, corporate site (fictional demo brands)
 → Har step ka article, prompt se final render tak
 
+Live demo: editorbro.vercel.app
+
 Fork karo, clone karo, apna studio banao.
 Repo ka link chahiye? Comment karo "EDITOR" 👇
 

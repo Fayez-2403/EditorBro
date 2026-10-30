@@ -7,6 +7,8 @@ Reels, 3D films, apps and websites, built in code by Claude Code from a single p
 
 `Prompt → skills → pipeline → 12 quality gates → a finished reel`
 
+**Live demo:** [editorbro.vercel.app](https://editorbro.vercel.app): the highway hero and all nine demo sites
+
 </div>
 
 ---
